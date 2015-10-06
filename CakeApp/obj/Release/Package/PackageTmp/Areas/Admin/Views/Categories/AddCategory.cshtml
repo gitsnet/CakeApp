@@ -1,0 +1,98 @@
+﻿@model CategoriesModel
+@using CakeApp.Helper
+@{
+    ViewBag.Title = "AddCategory";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    ViewBag.Description = "Category";
+    ViewBag.href = "/admin/Categories/CategoryList";
+    ViewBag.SubDescription = "Add Category";
+}
+<section class="mainbody">
+    <div class="container edit_product">
+
+        <h2>Add Category</h2>
+        <div class="row">
+            <div class="col-md-12">
+                @Html.CustomValidationSummary("Error")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+               @using (Html.BeginForm("AddCategory", "Categories", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form", novalidate = "novalidate", @class = "form-horizontal", @enctype = "multipart/form-data" }))
+                    {
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Name</label>
+                        <div class="col-sm-5">
+                          
+                            @Html.TextBoxFor(c => c.CategoryName, new { @class = "form-control",@placeholder="Name" })
+                            @Html.ValidationMessageFor(m => m.CategoryName)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Title</label>
+                        <div class="col-sm-5">
+                         
+                            @Html.TextBoxFor(c => c.Title, new { @class = "form-control", @placeholder = "Title" })
+                            @Html.ValidationMessageFor(m => m.Title)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Tag</label>
+                        <div class="col-sm-5">
+                        
+                            @Html.DropDownList("TagID", new SelectList(Model.TagList, "TagID", "TagName"), "--Select--", new { @class = "form-control", @id = "ddlMakes" })
+                            @Html.ValidationMessageFor(m => m.TagID)
+                        </div>
+                    </div>
+                   <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Images</label>
+                        <div class="col-sm-5">
+                        
+                            @Html.DropDownList("CategoryImageID", new SelectList(Model.CategoryImagesList, "CategoryImageID", "ImageName"), "--Select--", new { @class = "form-control", @id = "ddlcategoryImg" })
+                            @Html.ValidationMessageFor(m => m.CategoryImageID)
+                        </div>
+                    </div>
+
+                    @*<div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Image</label>
+                        <div class="col-sm-4">
+                            <input id="file-0a" class="file" type="file" name="file">
+                        </div>
+                    </div>*@
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label ">Priority</label>
+                        <div class="col-sm-1">
+                            @Html.TextBoxFor(c => c.Priority, new { @class = "form-control input-sm number", @placeholder = "Priority", @type="number",@step="10" })
+                            @Html.ValidationMessageFor(m => m.Priority)
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Status</label>
+                        <div class="col-sm-5">
+                            <label class="checkbox-inline">
+                                @Html.RadioButtonFor(g => g.Status, "1", new {@name="rad",@checked="true" }) Enable
+                               
+                             
+                            </label>
+                            <label class="checkbox-inline">
+                               
+                                @Html.RadioButtonFor(g => g.Status, "0", new { @name = "rad"})Disable
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-actions col-md-offset-2 margin-bottom-15">
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-danger">Cancel</button>
+                    </div>
+               }
+            </div>
+        </div>
+    </div>
+</section>
+
+

@@ -1,0 +1,162 @@
+﻿@model CakeApp.Areas.Admin.Models.Attributes.InfoModel
+@using CakeApp.Helper
+
+@{
+    ViewBag.Title = "EditInfo";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    ViewBag.Description = "Attribute";
+    ViewBag.href = "/admin/Tag/List";
+    ViewBag.SubDescription = "Edit Info";
+}
+
+<section class="mainbody">
+    <div class="container edit_product">
+        <h2>Edit Info</h2>
+        <div class="row">
+            <div class="col-md-12">
+                @Html.CustomValidationSummary("Error")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                @using (Html.BeginForm("EditInfo", "Info", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form", novalidate = "novalidate", @class = "form-horizontal", @enctype = "multipart/form-data",@id="editForm" }))
+                {
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Name</label>
+                        <div class="col-sm-5">
+
+                            @Html.TextBoxFor(c => c.InfoName, new { @class = "form-control", @placeholder = "Name" })
+                            @Html.ValidationMessageFor(m => m.InfoName)
+                            @Html.HiddenFor(j => j.InfoID)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Title</label>
+                        <div class="col-sm-5">
+
+                            @Html.TextBoxFor(c => c.Title, new { @class = "form-control", @placeholder = "Title" })
+                            @Html.ValidationMessageFor(m => m.Title)
+                        </div>
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Cake Group</label>
+                        <div class="col-sm-8" id="more_cat">
+                           
+                            @Html.HiddenFor(a => a.GroupIDs, new { @id = "hdnGroupIDs" })
+                            @*<input type="hidden" value="@Json.Encode(Model.GroupIDs)" id="hdnGroupID" />*@
+                            @{var i = 0;
+                            foreach (var item in Model.InfoGroupList)
+                            {
+
+                                i++;
+                                <div class="row clone_row">
+                                    <div class="col-sm-5">
+                                        @Html.DropDownListFor(t => t.GroupID, new SelectList(Model.GroupList, "GroupID", "GroupName", item.GroupID), "--Select--", new { @class = "form-control grouplist", @id = "ddlGroups_"+i, @onchange = "InsertGroupId(this)" })
+                                        @Html.ValidationMessageFor(m => m.GroupID)
+
+                                    </div>
+                                    @*@if (Model.InfoGroupList.Count - 1 == i)
+                                    {
+                                        <div class="col-sm-3">
+                                            <button class="btn btn-danger delete_more" type="button" onclick="DeleteRow(this)"><i class="fa fa-minus-circle"></i></button>
+
+                                            <button class="btn btn-warning add_more" type="button" onclick="AddRow(this)"><i class="fa fa-plus-circle"></i></button>
+                                        </div>
+                                    }
+                                    else if (Model.InfoGroupList.Count == 1)
+                                    {*@
+                                        <div class="col-sm-3">
+                                            <button style="" class="btn btn-danger delete_more" type="button" onclick="DeleteRow(this)"><i class="fa fa-minus-circle"></i></button>
+
+                                            <button class="btn btn-warning add_more" type="button" onclick="AddRow(this)"><i class="fa fa-plus-circle"></i></button>
+                                        </div>
+                                    @*}
+                                    else
+                                    {
+                                        <div class="col-sm-3">
+                                            <button class="btn btn-danger delete_more" type="button" onclick="DeleteRow(this)"><i class="fa fa-plus-circle"></i></button>
+                                        </div>
+                                    }*@
+                                </div>
+
+                            }
+                            }
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label ">Priority</label>
+                        <div class="col-sm-1">
+                            @Html.TextBoxFor(c => c.Priority, new { @class = "form-control input-sm number", @placeholder = "Priority", @type = "number", @step = "10" })
+                            @Html.ValidationMessageFor(m => m.Priority)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Status</label>
+                        <div class="col-sm-5">
+                            <label class="checkbox-inline">
+                                @Html.RadioButtonFor(g => g.Status, "1", new { @name = "rad", @checked = "true" }) Enable
+
+
+                            </label>
+                            <label class="checkbox-inline">
+
+                                @Html.RadioButtonFor(g => g.Status, "0", new { @name = "rad" })Disable
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-actions col-md-offset-2 margin-bottom-15">
+                        <button type="button" class="btn btn-primary" onclick="SubmitForm()">Save changes</button>
+                        <button type="button" class="btn btn-danger">Cancel</button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function InsertGroupId(that) {
+        var flag = false;
+        if ($(".grouplist").length > 1) {
+            $(".grouplist").each(function () {
+                if ($(that).val() == $(this).val() && $(this).attr("id") != $(that).attr("id")) {
+                    flag = true;
+                    return false;
+                }
+            });
+        }
+        if (flag) {
+            alert($(that).children("option:selected").text() + " was already added.")
+            $(that).val("");
+        }
+
+    }
+    var SubmitForm = function () {
+        var value = "";
+        $("#hdnGroupIDs").val("");
+        $(".grouplist").each(function () {
+            if ($(this).val())
+                value += $(this).val() + ",";
+        });
+        $("#hdnGroupIDs").val(value);
+
+        $("#editForm").submit();
+    }
+    function AddRow(that) {
+        var row = $(".clone_row:last-child");
+         var thisRow=$(".clone_row:last-child").clone().appendTo('#more_cat');      
+         var lastDDlId = $(row).find("select").attr("id").split('_')[1];
+         $(thisRow).find("select").attr("id", "ddlGroups_" + parseInt(parseInt(lastDDlId) + 1));
+    }
+    function DeleteRow(that) {
+        if ($(".grouplist").length > 1)
+            $(that).parent().parent().remove();
+    }
+
+
+
+</script>

@@ -1,0 +1,56 @@
+﻿@model FTPSettingsModel
+@using CakeApp.Helper
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<section class="mainbody">
+    <div class="container edit_product">
+        <h2>FTP SETTINGS</h2>
+        <div class="row">
+            <div class="col-md-12">
+                @Html.CustomValidationSummary("Error")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                @using (Html.BeginForm("Index", "FTPSettings", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form", novalidate = "novalidate", @class = "form-horizontal", @enctype = "multipart/form-data" }))
+                {
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Host Name</label>
+                        <div class="col-sm-5">
+
+                            @Html.TextBoxFor(c => c.HostName, new { @class = "form-control", @placeholder = "Host Name" })
+                            @Html.ValidationMessageFor(m => m.HostName)
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+                        <div class="col-sm-5">
+
+                            @Html.PasswordFor(c => c.FTPPassword, new { @class = "form-control", @placeholder = "Password" })
+                            @Html.ValidationMessageFor(m => m.FTPPassword)
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Folder Name</label>
+                        <div class="col-sm-5">
+
+                            @Html.TextBoxFor(c => c.FolderName, new { @class = "form-control", @placeholder = "Folder Name" })
+                            @Html.ValidationMessageFor(m => m.FolderName)
+                        </div>
+                    </div>
+                     <div class="form-actions col-md-offset-2 margin-bottom-15">
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-danger">Cancel</button>
+                    </div>
+                    
+                }
+            </div>
+        </div>
+    </div>
+</section>
+

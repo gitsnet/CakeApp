@@ -1,0 +1,529 @@
+D:\Projects\CakeApp\CakeApp\bin\CakeApp.dll.config
+D:\Projects\CakeApp\CakeApp\bin\CakeApp.dll
+D:\Projects\CakeApp\CakeApp\bin\CakeApp.pdb
+D:\Projects\CakeApp\CakeApp\bin\Antlr3.Runtime.dll
+D:\Projects\CakeApp\CakeApp\bin\EntityFramework.dll
+D:\Projects\CakeApp\CakeApp\bin\EntityFramework.SqlServer.dll
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.Owin.dll
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.Owin.Security.dll
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Google.dll
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.dll
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\CakeApp\CakeApp\bin\Newtonsoft.Json.dll
+D:\Projects\CakeApp\CakeApp\bin\Owin.dll
+D:\Projects\CakeApp\CakeApp\bin\System.Net.Http.Formatting.dll
+D:\Projects\CakeApp\CakeApp\bin\System.Web.Helpers.dll
+D:\Projects\CakeApp\CakeApp\bin\System.Web.Http.dll
+D:\Projects\CakeApp\CakeApp\bin\System.Web.Http.WebHost.dll
+D:\Projects\CakeApp\CakeApp\bin\System.Web.Mvc.dll
+D:\Projects\CakeApp\CakeApp\bin\System.Web.Optimization.dll
+D:\Projects\CakeApp\CakeApp\bin\System.Web.Razor.dll
+D:\Projects\CakeApp\CakeApp\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\CakeApp\CakeApp\bin\System.Web.WebPages.dll
+D:\Projects\CakeApp\CakeApp\bin\System.Web.WebPages.Razor.dll
+D:\Projects\CakeApp\CakeApp\bin\WebGrease.dll
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.xml
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\Projects\CakeApp\CakeApp\bin\System.Net.Http.Formatting.xml
+D:\Projects\CakeApp\CakeApp\bin\System.Web.Http.xml
+D:\Projects\CakeApp\CakeApp\bin\System.Web.Http.WebHost.xml
+D:\Projects\CakeApp\CakeApp\bin\System.Web.Helpers.xml
+D:\Projects\CakeApp\CakeApp\bin\System.Web.Mvc.xml
+D:\Projects\CakeApp\CakeApp\bin\System.Web.Optimization.xml
+D:\Projects\CakeApp\CakeApp\bin\System.Web.Razor.xml
+D:\Projects\CakeApp\CakeApp\bin\System.Web.WebPages.xml
+D:\Projects\CakeApp\CakeApp\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\CakeApp\CakeApp\bin\System.Web.WebPages.Razor.xml
+D:\Projects\CakeApp\CakeApp\bin\Newtonsoft.Json.xml
+D:\Projects\CakeApp\CakeApp\bin\Antlr3.Runtime.pdb
+D:\Projects\CakeApp\CakeApp\bin\EntityFramework.xml
+D:\Projects\CakeApp\CakeApp\bin\EntityFramework.SqlServer.xml
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.Owin.xml
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.Owin.Security.xml
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Google.xml
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Projects\CakeApp\CakeApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Projects\CakeApp\CakeApp\obj\Debug\CakeApp.dll
+D:\Projects\CakeApp\CakeApp\obj\Debug\CakeApp.pdb
+D:\Projects\CakeApp\CakeApp\obj\Debug\CakeApp.csprojResolveAssemblyReference.cache
+D:\Projects\CakeApp\CakeApp\bin\Core.dll
+D:\Projects\CakeApp\CakeApp\bin\Data.dll
+D:\Projects\CakeApp\CakeApp\bin\Service.dll
+D:\Projects\CakeApp\CakeApp\bin\Autofac.dll
+D:\Projects\CakeApp\CakeApp\bin\Autofac.Integration.Mvc.dll
+D:\Projects\CakeApp\CakeApp\bin\Core.pdb
+D:\Projects\CakeApp\CakeApp\bin\Data.pdb
+D:\Projects\CakeApp\CakeApp\bin\Service.pdb
+D:\Projects\CakeApp\CakeApp\bin\Autofac.xml
+D:\Projects\CakeApp\CakeApp\bin\Autofac.Integration.Mvc.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\CakeApp.dll.config
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\CakeApp.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\CakeApp.pdb
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Antlr3.Runtime.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Autofac.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Autofac.Integration.Mvc.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Core.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Data.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\EntityFramework.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\EntityFramework.SqlServer.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Google.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Newtonsoft.Json.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Owin.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Service.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\System.Net.Http.Formatting.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\System.Web.Helpers.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\System.Web.Http.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\System.Web.Http.WebHost.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\System.Web.Optimization.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\System.Web.Razor.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.Razor.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\WebGrease.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Autofac.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Autofac.Integration.Mvc.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Core.pdb
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Data.pdb
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Service.pdb
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\System.Net.Http.Formatting.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\System.Web.Http.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\System.Web.Http.WebHost.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\System.Web.Helpers.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\System.Web.Optimization.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\System.Web.Razor.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.Razor.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Newtonsoft.Json.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Antlr3.Runtime.pdb
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\EntityFramework.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\EntityFramework.SqlServer.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Google.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Projects\CakeApp\CakeApp\CakeApp\obj\Debug\CakeApp.csprojResolveAssemblyReference.cache
+D:\Projects\CakeApp\CakeApp\CakeApp\obj\Debug\CakeApp.dll
+D:\Projects\CakeApp\CakeApp\CakeApp\obj\Debug\CakeApp.pdb
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\CakeApp.dll.config
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\CakeApp.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\CakeApp.pdb
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Antlr3.Runtime.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Autofac.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Autofac.Integration.Mvc.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Core.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Data.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\EntityFramework.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\EntityFramework.SqlServer.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Core.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Cookies.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Facebook.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Google.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.OAuth.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Twitter.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.Configuration.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Web.Infrastructure.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Newtonsoft.Json.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Owin.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Service.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Net.Http.Formatting.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Helpers.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Http.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Http.WebHost.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Mvc.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Optimization.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Razor.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.Deployment.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.Razor.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\WebGrease.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Autofac.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Autofac.Integration.Mvc.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Core.pdb
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Data.pdb
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.Configuration.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Service.pdb
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Net.Http.Formatting.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Http.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Http.WebHost.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Mvc.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Helpers.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Optimization.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Razor.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.Deployment.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.Razor.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Newtonsoft.Json.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Antlr3.Runtime.pdb
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\EntityFramework.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\EntityFramework.SqlServer.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Core.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Facebook.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Cookies.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.OAuth.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Google.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Twitter.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\obj\Debug\CakeApp.csprojResolveAssemblyReference.cache
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\obj\Debug\CakeApp.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\CakeApp\obj\Debug\CakeApp.pdb
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\CakeApp.dll.config
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\CakeApp.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\CakeApp.pdb
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Antlr3.Runtime.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Autofac.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Autofac.Integration.Mvc.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Core.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Data.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\EntityFramework.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\EntityFramework.SqlServer.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Core.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Cookies.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Facebook.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Google.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.OAuth.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Twitter.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Web.Infrastructure.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Newtonsoft.Json.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Owin.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Service.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Net.Http.Formatting.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Helpers.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Http.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Http.WebHost.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Optimization.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Razor.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.Deployment.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.Razor.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\WebGrease.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Autofac.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Autofac.Integration.Mvc.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Core.pdb
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Data.pdb
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Service.pdb
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Net.Http.Formatting.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Http.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Http.WebHost.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Helpers.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Optimization.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Razor.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.Deployment.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.Razor.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Newtonsoft.Json.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Antlr3.Runtime.pdb
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\EntityFramework.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\EntityFramework.SqlServer.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Core.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Facebook.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Cookies.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.OAuth.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Google.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Twitter.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\obj\Debug\CakeApp.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\obj\Debug\CakeApp.pdb
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\obj\Debug\CakeApp.csprojResolveAssemblyReference.cache
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\obj\Debug\CakeApp.csprojResolveAssemblyReference.cache
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\CakeApp.dll.config
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\CakeApp.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\CakeApp.pdb
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Antlr3.Runtime.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Autofac.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Autofac.Integration.Mvc.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Core.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Data.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\EntityFramework.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\EntityFramework.SqlServer.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Google.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Web.Infrastructure.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Newtonsoft.Json.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Owin.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Service.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Net.Http.Formatting.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Helpers.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Http.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Http.WebHost.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Optimization.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Razor.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.Deployment.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.Razor.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\WebGrease.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Autofac.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Autofac.Integration.Mvc.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Core.pdb
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Data.pdb
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Service.pdb
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Net.Http.Formatting.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Http.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Http.WebHost.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Helpers.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Optimization.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Razor.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.Deployment.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.Razor.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Newtonsoft.Json.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Antlr3.Runtime.pdb
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\EntityFramework.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\EntityFramework.SqlServer.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Google.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\obj\Debug\CakeApp.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\obj\Debug\CakeApp.pdb
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\CakeApp.dll.config
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\CakeApp.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\CakeApp.pdb
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Antlr3.Runtime.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Autofac.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Autofac.Integration.Mvc.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Core.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Data.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\EntityFramework.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\EntityFramework.SqlServer.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Core.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Cookies.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Facebook.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Google.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.OAuth.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Twitter.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Web.Infrastructure.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Newtonsoft.Json.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Owin.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Service.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Net.Http.Formatting.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Helpers.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Http.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Http.WebHost.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Optimization.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Razor.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.Deployment.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.Razor.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\WebGrease.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Autofac.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Autofac.Integration.Mvc.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Core.pdb
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Data.pdb
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Service.pdb
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Net.Http.Formatting.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Http.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Http.WebHost.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Helpers.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Optimization.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Razor.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.Deployment.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.Razor.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Newtonsoft.Json.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Antlr3.Runtime.pdb
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\EntityFramework.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\EntityFramework.SqlServer.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Core.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Facebook.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Cookies.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.OAuth.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Google.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Twitter.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\obj\Debug\CakeApp.csprojResolveAssemblyReference.cache
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\obj\Debug\CakeApp.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\CakeApp\obj\Debug\CakeApp.pdb
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\CakeApp.dll.config
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\CakeApp.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\CakeApp.pdb
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Antlr3.Runtime.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Autofac.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Autofac.Integration.Mvc.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Core.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Data.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\EntityFramework.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\EntityFramework.SqlServer.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Google.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Web.Infrastructure.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Newtonsoft.Json.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Owin.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Service.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Net.Http.Formatting.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Helpers.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Http.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Http.WebHost.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Optimization.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Razor.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.Deployment.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.Razor.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\WebGrease.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Autofac.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Autofac.Integration.Mvc.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Core.pdb
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Data.pdb
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Service.pdb
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Net.Http.Formatting.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Http.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Http.WebHost.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Helpers.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Optimization.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.Razor.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.Deployment.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\System.Web.WebPages.Razor.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Newtonsoft.Json.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Antlr3.Runtime.pdb
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\EntityFramework.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\EntityFramework.SqlServer.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Google.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\obj\Debug\CakeApp.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\obj\Debug\CakeApp.pdb
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\CakeApp\obj\Debug\CakeApp.csprojResolveAssemblyReference.cache

@@ -1,0 +1,437 @@
+﻿@model List<CakeApp.Areas.Admin.Models.Screensaver.ScreensaversModel>
+@using CakeApp.Helper
+@{
+    ViewBag.Title = "ScreensaverList";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+     ViewBag.Description = "Screensaver";
+}
+
+
+<section class="mainbody">
+    <div class="container">
+        <h2>Screensaver List</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                <div class="portlet light">
+
+                    <div class="portlet-body">
+                        <div class="table-toolbar">
+                            <div class="row">
+                                <div class="col-md-6 pull-right" style="width:auto;">
+                                    <div class="btn-group">
+                                        <button id="" class="btn" onclick="window.location.href = '/admin/Screensavers/AddScreensaver'">
+                                            Add Screensaver&nbsp;<i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                    <!--<div class="btn-group">
+                                        <button id="sample_editable_1_new" class="btn green">
+                                        Arrange Category&nbsp;<i class="fa fa-sliders"></i>
+                                        </button>
+                                    </div>-->
+                                </div>
+
+                            </div>
+                            @Html.CustomValidationSummary("Error")
+                        </div>
+                        <table class="table table-striped table-hover table-bordered" id="screensaverlisting">
+                            <thead>
+                              <tr id="filterrow">
+                                    <td>Name</td>
+                                    <td>Title</td>
+                                    <td>Video</td>
+                                    <td>Priority</td>
+                                    <td>Status</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Title</th>
+                                    <th>Video</th>
+                                    <th>Priority</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                              </tr>
+                            </thead>
+
+                            <tbody>
+                                @if (Model.Count > 0)
+                                {
+                                    foreach (var item in Model)
+                                    {
+
+                                        <tr>
+
+
+                                            <td>
+
+                                                <input type="hidden" value="@item.ScreensaverID" class="screensaverid" />
+                                                @Html.Label("", item.Name, new { @class = "screensavername" })
+                                            </td>
+                                            <td>
+                                                @Html.Label("", @item.Title, new { @class = "title" })
+                                            </td>
+                                            <td>
+                                                @*<img src='@(Url.Content("~/Content/Assets/ScreensaverVideos/" + item.Video))' alt="@item.Video" class="thumbnail" width="25%" data-datac="@item.Video" />*@
+                                                <video width="100" height="100" controls>
+                                                    <source src='@(Url.Content("~/Content/Assets/ScreensaverVideos/" + item.Video))' type="video/mp4">
+                                                    <source src='@(Url.Content("~/Content/Assets/ScreensaverVideos/" + item.Video))' type="video/ogg">
+                                                    Your browser does not support the video tag.
+                                                </video>
+                                            </td>
+
+
+                                            <td>
+                                                @Html.Label("", item.Priority.ToString(), new { @class = "priority" })
+                                            </td>
+                                            <td>
+                                                @*@Html.Label("", item.Status, new { @class = "status" })*@
+                                                @if (item.Status == "Enable")
+                                                {
+                                                    <i class="fa fa-check status" data-value="@item.Status" data-search="@item.Status"></i><span style="text-indent: -9999px; display: block;">@item.Status</span>
+                                                }
+                                                else
+                                                {
+                                                    <i class="fa fa-close status" data-value="@item.Status" data-search="@item.Status"></i><span style="text-indent: -9999px; display: block;">@item.Status</span>
+                                                }
+
+                                            </td>
+
+
+                                            <td>
+                                                <a class="edit btn btn-default" href="@Url.Action("EditScreensaver", "Screensavers", new {@Id=item.ScreensaverID })">
+                                                    <i class="fa fa-edit" data-value="@item.ScreensaverID"></i>Edit
+                                                </a>
+                                                <a class="delete btn btn-default" href="javascript:;" data-value="@item.ScreensaverID">
+                                                    <i href="" class="fa fa-close"></i>Delete
+                                                </a>
+                                            </td>
+
+
+                                        </tr>
+
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- END EXAMPLE TABLE PORTLET-->
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    var TableEditable = function () {
+
+        var handleTable = function () {
+
+            function restoreRow(oTable, nRow) {
+                var aData = oTable.fnGetData(nRow);
+                var jqTds = $('>td', nRow);
+
+                for (var i = 0, iLen = jqTds.length; i < iLen; i++) {
+                    oTable.fnUpdate(aData[i], nRow, i, false);
+                }
+
+                oTable.fnDraw();
+            }
+
+            //function editRow(oTable, nRow, CategoryID) {
+            //   // var aData = oTable.fnGetData(nRow);
+            //    //console.log(aData);
+            //    var jqTds = $('>td', nRow);
+
+            //    //console.log(jqTds[0]);
+            //    var CategoryID = $(jqTds[0]).children(".categoryid").val();
+            //    var CategoryName = $(jqTds[0]).children(".categoryname").text();
+            //    var title = $(jqTds[1]).children(".title").text();
+            //    var img = $(jqTds[2]).children("img").attr("src");
+
+            //    var tagid = $(jqTds[3]).children(".tagid").val();
+            //    var tagname = $(jqTds[3]).children(".tag").text();
+            //    var priority = $(jqTds[4]).children(".priority").text();
+            //    var status = $(jqTds[5]).children(".status").text();
+
+
+            //    var rbEnabledChecked = "";
+            //    var rbDisabledChecked = "";
+            //    if (status == "Active") {
+            //        rbEnabledChecked = "checked";
+            //        rbDisabledChecked = "";
+            //    }
+            //    else {
+            //        rbEnabledChecked = "";
+            //        rbDisabledChecked = "checked";
+
+            //    }
+            //    var catID = $('#hdnCategory').val();
+            //    var html = "";
+            //    $.ajax({
+            //        url: "/Categories/GetTagList",
+            //        dataType: "json",
+            //        type: "GET",
+            //        contentType: 'application/json; charset=utf-8',
+            //        data: {},
+            //        async: true,
+            //        processData: false,
+            //        cache: false,
+            //        success: function (data) {
+            //            console.log(data);
+
+            //            html += '<select class="form-control" id="ddlTag">';
+            //            html += '<option value="">select</option>';
+            //            $.each(data, function (index, value) {
+            //                if (value.TagID==tagid)
+            //                    html += '<option value="' + value.TagID + '" selected>' + value.TagName + ' </option>';
+            //                else
+            //                    html += '<option value="' + value.TagID + '" selected>' + value.TagName + ' </option>';
+
+            //            });
+            //            html += '</select>';
+
+
+            //            jqTds[0].innerHTML = '<input type="hidden" class="form-control input-small hdncategoryid" value="' + CategoryID + '"><input type="text" class="form-control input-small categoryname" value="' + CategoryName + '">';
+            //            jqTds[1].innerHTML = '<input type="text" class="form-control input-small categorytitle" value="' + title + '">';
+            //            jqTds[2].innerHTML = '<img src="'+img+'" class="thumbnail" width="25%"> <input id="file-0a" class="file" type="file" name="file">';
+            //            jqTds[3].innerHTML = html;
+            //            jqTds[4].innerHTML = '<input type="number" class="form-control input-small categorypriority" value="' + priority + '" style="width:20px;"/>';
+            //            jqTds[5].innerHTML = '<input type="radio" class="form-control input-small radio_left categorystatus" name="rd" value="1" ' + rbEnabledChecked + '><span class="text-lext">Enable</span> <input type="radio" class="form-control input-small radio_left categorystatus" value="0" name="rd" ' + rbDisabledChecked + '> <span class="text-lext">Disable</span>';
+            //            jqTds[6].innerHTML = '<a class="edit btn btn-default" href=""> <i href="" class="fa fa-save"></i>Save</a> <a class="cancel btn btn-default" href="" ><i href="" class="fa fa-close"></i>&nbsp;Cancel</a>';
+
+            //        }
+            //    });
+
+
+            //}
+
+            //function saveRow(oTable, nRow, CategoryID) {
+            //    var jqInputs = $('input', nRow);
+            //    var jqSelect = $('select', nRow);
+            //    var categoryid = $(nRow).find(".hdncategoryid").val();
+            //    var categoryname = $(nRow).find(".categoryname").val();
+            //    var categorytitle = $(nRow).find(".categorytitle").val();
+            //    var categoryimg = $(nRow).find("img").attr("src");
+            //    var tagid = $(nRow).find("select option:selected").val();
+            //    var tagname = $(nRow).find("select option:selected").text();
+            //    var categorypriority = $(nRow).find(".categorypriority").val();
+            //    var categorystatus = $(nRow).find(".categorystatus:checked").val() == "1" ? "Active" : "Inactive";
+
+            //    console.log(categoryid);
+            //    console.log(categorystatus);
+
+            //    $.ajax({
+            //        url: "/Categories/EditCategories",
+            //        datatype: "json",
+            //        type: "POST",
+            //        contentType: 'application/json',
+            //        data: JSON.stringify({ CategoryID: categoryid, CategoryName: "'" + categoryname + "'", Title: "'" + categorytitle + "'", TagID: tagid, Image: "'" + categoryimg + "'", Priority: categorypriority, Status: categorystatus }),
+            //        success: function (data) {
+            //            console.log(data);
+
+            //        },
+            //        error: function (err) {
+            //            console.log(err)
+            //        }
+            //    });
+
+            //    oTable.fnUpdate(categoryname, nRow, 0, false);
+            //    oTable.fnUpdate(categorytitle, nRow, 1, false);
+            //    oTable.fnUpdate("<img src='" + categoryimg + "' class='thumbnail' width='25%'>", nRow, 2, false);
+            //    oTable.fnUpdate(tagname, nRow, 3, false);
+            //    oTable.fnUpdate(categorypriority, nRow, 4, false);
+            //    oTable.fnUpdate(categorystatus, nRow, 5, false);
+
+
+
+            //    oTable.fnUpdate('<a class="edit btn btn-default" href=""><i href="" class="fa fa-edit"></i>Edit</a> <a class="delete btn btn-default" href=""><i href="" class="fa fa-close"></i>&nbsp;Delete</a>', nRow, 6, false);
+            //    oTable.fnDraw();
+            //}
+
+            //function cancelEditRow(oTable, nRow) {
+            //    var jqInputs = $('input', nRow);
+            //    oTable.fnUpdate(jqInputs[0].value, nRow, 0, false);
+            //    oTable.fnUpdate(jqInputs[1].value, nRow, 1, false);
+            //    oTable.fnUpdate(jqInputs[2].value, nRow, 2, false);
+            //    oTable.fnUpdate(jqInputs[3].value, nRow, 3, false);
+            //    oTable.fnUpdate(jqInputs[4].value, nRow, 4, false);
+            //    oTable.fnUpdate('<a class="edit btn btn-default" href=""><i href="" class="fa fa-edit"></i>Edit</a>', nRow, 5, false);
+            //    oTable.fnDraw();
+            //}
+
+            var table = $('#screensaverlisting');
+
+            var count = 0;
+
+            $('#screensaverlisting').find("thead>tr").eq(0).find("td").each(function () {
+                if (count < ($('#screensaverlisting thead  td').length - 1)) {
+                    var title = $('#screensaverlisting thead th').eq($(this).index()).text();
+
+                    if ($(this).index() == 4) {
+                        $(this).html('<input type="radio"  class="form-control input-small radio_left status" name="rd" value="Enable"><span class="text-lext">Enable</span> <input type="radio" class="form-control input-small radio_left status" value="Disable" name="rd" > <span class="text-lext">Disable</span>');
+                    }
+
+                    else {
+                        $(this).html('<input id="' + count + '" type="text" placeholder="Search ' + title + '" class="form-control input-inline" />');
+                    }
+                    count++;
+                }
+            });
+
+
+            var oTable = table.dataTable({
+
+                // Uncomment below line("dom" parameter) to fix the dropdown overflow issue in the datatable cells. The default datatable layout
+                // setup uses scrollable div(table-scrollable) with overflow:auto to enable vertical scroll(see: assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js).
+                // So when dropdowns used the scrollable div should be removed.
+                //"dom": "<'row'<'col-md-6 col-sm-12'l><'col-md-6 col-sm-12'f>r>t<'row'<'col-md-5 col-sm-12'i><'col-md-7 col-sm-12'p>>",
+
+                "lengthMenu": [
+                    [5, 15, 20, -1],
+                    [5, 15, 20, "All"] // change per page values here
+                ],
+
+                // Or you can use remote translation file
+                //"language": {
+                //   url: '//cdn.datatables.net/plug-ins/3cfcc339e89/i18n/Portuguese.json'
+                //},
+
+                // set the initial value
+                "pageLength": 10,
+
+                "language": {
+                    "lengthMenu": " _MENU_ records"
+                },
+                "columnDefs": [{ // set default column settings
+                    'orderable': true,
+                    'targets': [0]
+                }, {
+                    "searchable": true,
+                    "targets": [0]
+                }],
+                "order": [
+                    [3, "desc"]
+                ],// set first column as a default sort by asc
+            });
+
+            var tab = $('#screensaverlisting').DataTable();
+            $("#screensaverlisting thead input").bind('keyup change', function () {
+
+                tab
+                    .column($(this).parent().index() + ':visible')
+                    .search(this.value)
+                    .draw();
+            });
+
+
+            $("#screensaverlisting thead input[type='radio']").bind('click', function () {
+                //console.log(this.value);
+                //console.log($(this).parent().index());
+                 var reg = this.value;
+                //tab.search(this.value, true, true, true).draw();
+                tab
+                    .column($(this).parent().index())
+                    .search(reg, true, true, true)
+                    .draw();
+            });
+
+
+
+            var tableWrapper = $("#sample_editable_1_wrapper");
+
+            tableWrapper.find(".dataTables_length select").select2({
+                showSearchInput: false //hide search box with special css class
+            }); // initialize select2 dropdown
+
+            var nEditing = null;
+            var nNew = false;
+
+            $('#sample_editable_1_new').click(function (e) {
+                e.preventDefault();
+
+                if (nNew && nEditing) {
+                    if (confirm("Previose row not saved. Do you want to save it ?")) {
+                        saveRow(oTable, nEditing); // save
+                        $(nEditing).find("td:first").html("Untitled");
+                        nEditing = null;
+                        nNew = false;
+
+                    } else {
+                        oTable.fnDeleteRow(nEditing); // cancel
+                        nEditing = null;
+                        nNew = false;
+
+                        return;
+                    }
+                }
+
+                var aiNew = oTable.fnAddData(['', '', '', '', '', '']);
+                var nRow = oTable.fnGetNodes(aiNew[0]);
+                editRow(oTable, nRow);
+                nEditing = nRow;
+                nNew = true;
+            });
+
+            table.on('click', '.delete', function (e) {
+                e.preventDefault();
+
+                if (confirm("Are you sure to delete this row ?") == false) {
+                    return;
+
+                }
+
+     var ScreensaverID = $(this).data('value');
+                var nRow = $(this).parents('tr')[0];
+                $.ajax({
+                    type: "POST",
+                    datatype: 'json',
+                    data: { id: ScreensaverID },
+                    url: '@Url.Action("DeleteSreensaver", "Screensavers")',
+                    success: function (result) {
+                        console.log(result)
+                        if (result == "true") {
+
+                            oTable.fnDeleteRow(nRow);
+                            $(document).trigger("add-alerts", {
+                                message: "Deleted successfully",
+                                priority: "success"
+                            });
+                        }
+                        else {
+                            $(document).trigger("add-alerts", {
+                                message: result,
+                                priority: "error"
+                            });
+
+                        }
+
+                    },
+                    error: function (err) {
+                        $(document).trigger("add-alerts", {
+                            message: err,
+                            priority: "error"
+                        });
+                    }
+
+                });
+
+            });
+
+        }
+
+        return {
+
+            //main function to initiate the module
+            init: function () {
+                handleTable();
+            }
+
+        };
+
+    }();
+    jQuery(document).ready(function () {
+
+        TableEditable.init();
+    });
+</script>

@@ -1,0 +1,52 @@
+﻿@model CakeApp.Areas.Admin.Models.Attributes.GroupModel
+@using CakeApp.Helper
+
+@{
+    ViewBag.Title = "Add Group";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    ViewBag.Description = "Attribute";
+    ViewBag.href = "/admin/Tag/List";
+    ViewBag.SubDescription = "Add Cake Groups";
+}
+}
+
+<section class="mainbody">
+    <div class="container edit_product">
+        <h2>Add Group</h2>
+        <div class="row">
+            <div class="col-md-12">
+                @Html.CustomValidationSummary("Error")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                @using (Html.BeginForm("AddGroup", "Group", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form", novalidate = "novalidate", @class = "form-horizontal", @enctype = "multipart/form-data" }))
+                {
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Name</label>
+                        <div class="col-sm-5">
+
+                            @Html.TextBoxFor(c => c.GroupName, new { @class = "form-control", @placeholder = "Name" })
+                            @Html.ValidationMessageFor(m => m.GroupName)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Title</label>
+                        <div class="col-sm-5">
+
+                            @Html.TextBoxFor(c => c.Title, new { @class = "form-control", @placeholder = "Title" })
+                            @Html.ValidationMessageFor(m => m.Title)
+                        </div>
+                    </div>
+
+                    <div class="form-actions col-md-offset-2 margin-bottom-15">
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                        <button type="reset" class="btn btn-danger">Cancel</button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+
