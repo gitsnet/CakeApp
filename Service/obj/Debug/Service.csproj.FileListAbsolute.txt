@@ -1,0 +1,140 @@
+F:\Office Projects\Lessons\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+F:\Office Projects\Lessons\Service\bin\Debug\Service.dll
+F:\Office Projects\Lessons\Service\bin\Debug\Service.pdb
+F:\Office Projects\Lessons\Service\bin\Debug\Core.dll
+F:\Office Projects\Lessons\Service\bin\Debug\Data.dll
+F:\Office Projects\Lessons\Service\bin\Debug\Autofac.dll
+F:\Office Projects\Lessons\Service\bin\Debug\System.Web.Mvc.dll
+F:\Office Projects\Lessons\Service\bin\Debug\Autofac.Integration.Mvc.dll
+F:\Office Projects\Lessons\Service\bin\Debug\EntityFramework.dll
+F:\Office Projects\Lessons\Service\bin\Debug\Core.pdb
+F:\Office Projects\Lessons\Service\bin\Debug\Data.pdb
+F:\Office Projects\Lessons\Service\bin\Debug\Autofac.xml
+F:\Office Projects\Lessons\Service\bin\Debug\System.Web.Mvc.xml
+F:\Office Projects\Lessons\Service\bin\Debug\Autofac.Integration.Mvc.xml
+F:\Office Projects\Lessons\Service\obj\Debug\Service.dll
+F:\Office Projects\Lessons\Service\obj\Debug\Service.pdb
+F:\Office Projects\07-08-2015\Lessons\Service\bin\Debug\Service.dll
+F:\Office Projects\07-08-2015\Lessons\Service\bin\Debug\Service.pdb
+F:\Office Projects\07-08-2015\Lessons\Service\bin\Debug\Core.dll
+F:\Office Projects\07-08-2015\Lessons\Service\bin\Debug\Data.dll
+F:\Office Projects\07-08-2015\Lessons\Service\bin\Debug\Autofac.dll
+F:\Office Projects\07-08-2015\Lessons\Service\bin\Debug\System.Web.Mvc.dll
+F:\Office Projects\07-08-2015\Lessons\Service\bin\Debug\Autofac.Integration.Mvc.dll
+F:\Office Projects\07-08-2015\Lessons\Service\bin\Debug\EntityFramework.dll
+F:\Office Projects\07-08-2015\Lessons\Service\bin\Debug\Core.pdb
+F:\Office Projects\07-08-2015\Lessons\Service\bin\Debug\Data.pdb
+F:\Office Projects\07-08-2015\Lessons\Service\bin\Debug\Autofac.xml
+F:\Office Projects\07-08-2015\Lessons\Service\bin\Debug\System.Web.Mvc.xml
+F:\Office Projects\07-08-2015\Lessons\Service\bin\Debug\Autofac.Integration.Mvc.xml
+F:\Office Projects\07-08-2015\Lessons\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+F:\Office Projects\07-08-2015\Lessons\Service\obj\Debug\Service.dll
+F:\Office Projects\07-08-2015\Lessons\Service\obj\Debug\Service.pdb
+D:\Projects\Lessons\SourceCode\Lessons\Service\bin\Debug\Service.dll
+D:\Projects\Lessons\SourceCode\Lessons\Service\bin\Debug\Service.pdb
+D:\Projects\Lessons\SourceCode\Lessons\Service\bin\Debug\Autofac.dll
+D:\Projects\Lessons\SourceCode\Lessons\Service\bin\Debug\System.Web.Mvc.dll
+D:\Projects\Lessons\SourceCode\Lessons\Service\bin\Debug\Autofac.Integration.Mvc.dll
+D:\Projects\Lessons\SourceCode\Lessons\Service\bin\Debug\EntityFramework.dll
+D:\Projects\Lessons\SourceCode\Lessons\Service\bin\Debug\Core.pdb
+D:\Projects\Lessons\SourceCode\Lessons\Service\bin\Debug\Data.pdb
+D:\Projects\Lessons\SourceCode\Lessons\Service\bin\Debug\System.Web.Mvc.xml
+D:\Projects\Lessons\SourceCode\Lessons\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+D:\Projects\Lessons\SourceCode\Lessons\Service\obj\Debug\Service.dll
+D:\Projects\Lessons\SourceCode\Lessons\Service\obj\Debug\Service.pdb
+D:\Projects\Lessons\SourceCode\Lessons\Service\bin\Debug\Core.dll
+D:\Projects\Lessons\SourceCode\Lessons\Service\bin\Debug\Data.dll
+D:\Projects\CakeApp\Service\bin\Debug\Service.dll
+D:\Projects\CakeApp\Service\bin\Debug\Service.pdb
+D:\Projects\CakeApp\Service\bin\Debug\Core.dll
+D:\Projects\CakeApp\Service\bin\Debug\Data.dll
+D:\Projects\CakeApp\Service\bin\Debug\Autofac.dll
+D:\Projects\CakeApp\Service\bin\Debug\System.Web.Mvc.dll
+D:\Projects\CakeApp\Service\bin\Debug\Autofac.Integration.Mvc.dll
+D:\Projects\CakeApp\Service\bin\Debug\EntityFramework.dll
+D:\Projects\CakeApp\Service\bin\Debug\Core.pdb
+D:\Projects\CakeApp\Service\bin\Debug\Data.pdb
+D:\Projects\CakeApp\Service\bin\Debug\System.Web.Mvc.xml
+D:\Projects\CakeApp\Service\bin\Debug\EntityFramework.xml
+D:\Projects\CakeApp\Service\obj\Debug\Service.dll
+D:\Projects\CakeApp\Service\obj\Debug\Service.pdb
+D:\Projects\CakeApp\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+D:\Projects\CakeApp\CakeApp\Service\bin\Debug\Service.dll
+D:\Projects\CakeApp\CakeApp\Service\bin\Debug\Service.pdb
+D:\Projects\CakeApp\CakeApp\Service\bin\Debug\Core.dll
+D:\Projects\CakeApp\CakeApp\Service\bin\Debug\Data.dll
+D:\Projects\CakeApp\CakeApp\Service\bin\Debug\Autofac.dll
+D:\Projects\CakeApp\CakeApp\Service\bin\Debug\Autofac.Integration.Mvc.dll
+D:\Projects\CakeApp\CakeApp\Service\bin\Debug\EntityFramework.dll
+D:\Projects\CakeApp\CakeApp\Service\bin\Debug\Core.pdb
+D:\Projects\CakeApp\CakeApp\Service\bin\Debug\Data.pdb
+D:\Projects\CakeApp\CakeApp\Service\bin\Debug\EntityFramework.xml
+D:\Projects\CakeApp\CakeApp\Service\obj\Debug\Service.dll
+D:\Projects\CakeApp\CakeApp\Service\obj\Debug\Service.pdb
+D:\Projects\CakeApp\CakeApp\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Service\obj\Debug\Service.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Service\obj\Debug\Service.pdb
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Service.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Service.pdb
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Core.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Data.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Autofac.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Service\bin\Debug\System.Web.Mvc.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Autofac.Integration.Mvc.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Service\bin\Debug\EntityFramework.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Core.pdb
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Data.pdb
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Service\bin\Debug\System.Web.Mvc.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Service\bin\Debug\EntityFramework.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Service.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Service.pdb
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Core.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Data.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Autofac.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Autofac.Integration.Mvc.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\EntityFramework.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Core.pdb
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Data.pdb
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\EntityFramework.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\Service\obj\Debug\Service.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\Service\obj\Debug\Service.pdb
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Service.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Service.pdb
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Core.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Data.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Autofac.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Autofac.Integration.Mvc.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\EntityFramework.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Core.pdb
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Data.pdb
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\EntityFramework.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Service\obj\Debug\Service.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Service\obj\Debug\Service.pdb
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Service.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Service.pdb
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Core.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Data.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Autofac.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Autofac.Integration.Mvc.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\EntityFramework.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Core.pdb
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Data.pdb
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Service\bin\Debug\EntityFramework.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Service\obj\Debug\Service.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Service\obj\Debug\Service.pdb
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Service.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Service.pdb
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Core.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Data.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Autofac.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Autofac.Integration.Mvc.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\Service\bin\Debug\EntityFramework.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Core.pdb
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\Service\bin\Debug\Data.pdb
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\Service\bin\Debug\EntityFramework.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\Service\obj\Debug\Service.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\Service\obj\Debug\Service.pdb
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache

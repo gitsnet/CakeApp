@@ -1,0 +1,580 @@
+﻿@model CakeApp.Areas.Admin.Models.Product.ProductModel
+@using CakeApp.Helper
+
+@{
+    ViewBag.Title = "AddProduct";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    ViewBag.Description = "Product";
+    ViewBag.href = "/admin/Products/ProductList";
+    ViewBag.SubDescription = "Add Product";
+}
+
+<section class="mainbody">
+    <div class="container edit_product">
+        <h2>Add Product</h2>
+        <div class="row">
+            <div class="col-md-12">
+                @Html.CustomValidationSummary("Error")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                @using (Html.BeginForm("AddProduct", "Products", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form", novalidate = "novalidate", @class = "form-horizontal", @enctype = "multipart/form-data", @id = "addForm" }))
+                {
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Name</label>
+                        <div class="col-sm-5">
+
+                            @Html.TextBoxFor(c => c.ProductName, new { @class = "form-control", @placeholder = "Name" })
+                            @Html.ValidationMessageFor(m => m.ProductName)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Title</label>
+                        <div class="col-sm-5">
+
+                            @Html.TextBoxFor(c => c.Title, new { @class = "form-control", @placeholder = "Title" })
+                            @Html.ValidationMessageFor(m => m.Title)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Image</label>
+                        <div class="col-sm-4">
+                            <input id="file-0a" class="file" type="file" name="file" multiple>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Tag</label>
+                        <div class="col-sm-5">
+
+                            @Html.DropDownList("TagID", new SelectList(Model.TagList, "TagID", "TagName"), "--Select--", new { @class = "form-control", @id = "ddlMakes" })
+                            @Html.ValidationMessageFor(m => m.TagID)
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Categories</label>
+                        @Html.HiddenFor(a => a.CategoryIDs, new { @id = "hdnCategoryIDs" })
+                        @Html.HiddenFor(a => a.InfoIDs, new { @id = "hdnInfoIDs" })
+                        @Html.HiddenFor(a => a.SizeIDs, new { @id = "hdnSizeIDs" })
+                        @Html.HiddenFor(a => a.statAdditionalInfo, new { @id = "hdnstatAdditionalInfo" })
+                        @Html.HiddenFor(a => a.statInstructions, new { @id = "hdnstatInstructions" })
+
+                        <div class="col-sm-5" id="more_cat_category">
+                            <div class="row clone_row_category">
+                                <div class="col-sm-8">
+                                    @Html.DropDownList("CategoryID", new SelectList(Model.CategoryList, "CategoryID", "CategoryName"), "--Select--", new { @class = "form-control categorylist", @id = "ddlcategories_1", @onchange = "InsertCategoryId(this)" })
+                                    @Html.ValidationMessageFor(m => m.CategoryID)
+
+                                </div>
+                                <div class="col-sm-3">
+                                    <button style="" class="btn btn-danger delete_more_category" type="button" onclick="DeleteRowCategory(this)"><i class="fa fa-minus-circle"></i></button>
+
+                                    <button class="btn btn-warning add_more_category" type="button" onclick="AddRowCategory(this)"><i class="fa fa-plus-circle"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label ">Priority</label>
+                        <div class="col-sm-1">
+                            @Html.TextBoxFor(c => c.Priority, new { @class = "form-control input-sm number", @placeholder = "Priority", @type = "number", @step = "10" })
+                            @Html.ValidationMessageFor(m => m.Priority)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Group</label>
+                        <div class="col-sm-5">
+
+                            @Html.DropDownList("GroupID", new SelectList(Model.GroupList, "GroupID", "GroupName"), "--Select--", new { @class = "form-control", @id = "ddlGroups" })
+                            @Html.ValidationMessageFor(m => m.GroupID)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Info:</label>
+                        <div class="col-sm-10" id="divInfo" style="display:none;">
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Sizes</label>
+                        <div class="col-sm-6" id="divSize" style="display:none;">
+
+                        </div>
+                        @*<div class="col-sm-3" id="divPrice" style="display:none;">
+                                @*<input type="text" class="form-control" id="size_price" placeholder="" value="" style="display:none;">
+                            </div>*@
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Additional info</label>
+                        <div class="col-sm-5">
+
+                            @Html.TextAreaFor(c => c.AdditionalInfo, new { @class = "form-control", @placeholder = "Additional Information", @rows = "10", @cols = "40" })
+                            @Html.ValidationMessageFor(m => m.AdditionalInfo)
+                        </div>
+                        <div class="checkbox ">
+                            <label>
+                                @Html.CheckBoxFor(m => m.statusAdditionalInfo, new { @class = "statusAdditionalInfo" })
+
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Instructions</label>
+                        <div class="col-sm-5">
+
+                            @Html.TextAreaFor(c => c.Instructions, new { @class = "form-control", @placeholder = "Instructions", @rows = "10", @cols = "40" })
+                            @Html.ValidationMessageFor(m => m.Instructions)
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                @Html.CheckBoxFor(m => m.statusInstructions, new { @class = "statusInstructions" })
+                            </label>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Status</label>
+                        <div class="col-sm-5">
+                            <label class="checkbox-inline">
+                                @Html.RadioButtonFor(g => g.Status, "1", new { @name = "rad", @checked = "true" }) Enable
+
+
+                            </label>
+                            <label class="checkbox-inline">
+
+                                @Html.RadioButtonFor(g => g.Status, "0", new { @name = "rad" })Disable
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-actions col-md-offset-2 margin-bottom-15">
+                        <button type="button" class="btn btn-primary" onclick="SubmitForm()">Save changes</button>
+                        <button type="button" class="btn btn-danger">Cancel</button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+
+    var groupids = "";
+
+    function InsertCategoryId(that) {
+        var flag = false;
+        if ($(".categorylist").length > 1) {
+            $(".categorylist").each(function () {
+                if ($(that).val() == $(this).val() && $(this).attr("id") != $(that).attr("id")) {
+                    flag = true;
+                    return false;
+                }
+            });
+        }
+        if (flag) {
+            alert($(that).children("option:selected").text() + " was already added.")
+            $(that).val("");
+        }
+
+    }
+
+    function AddRowCategory(that) {
+        var row = $(".clone_row_category:last-child");
+        var thisRow = $(".clone_row_category:last-child").clone().appendTo('#more_cat_category');
+        var lastDDlId = $(row).find("select").attr("id").split('_')[1];
+        $(thisRow).find("select").attr("id", "ddlcategories_" + parseInt(parseInt(lastDDlId) + 1));
+
+    }
+
+
+    function DeleteRowCategory(that) {
+        if ($(".categorylist").length > 1)
+            $(that).parent().parent().remove();
+    }
+
+
+    var SubmitForm = function () {
+        var value = "";
+        var infovalue = "";
+        var sizevalue = "";
+        var statadditionalinfovalue = "";
+        var statinstructionsvalue = "";
+
+        $("#hdnCategoryIDs").val("");
+        $(".categorylist").each(function () {
+            if ($(this).val())
+                value += $(this).val() + ",";
+        });
+        $("#hdnCategoryIDs").val(value);
+
+
+
+        $("#hdnInfoIDs").val("");
+        $(".infoList").each(function () {
+            if ($(this).is(":checked"))
+                infovalue += $(this).val() + ",";
+        });
+        $("#hdnInfoIDs").val(infovalue);
+
+
+        $("#hdnSizeIDs").val("");
+        $(".size").each(function () {
+            if ($(this).is(":checked")) {
+                var price = $(this).parent().parent().find(".price").val();
+                console.log(price);
+                sizevalue += $(this).val() + "|" + price + ",";
+            }
+        });
+        $("#hdnSizeIDs").val(sizevalue);
+
+
+
+
+
+
+        $("#hdnstatAdditionalInfo").val("");
+        if ($(".statusAdditionalInfo").is(":checked")) {
+
+            statadditionalinfovalue = "1";
+            console.log(statadditionalinfovalue);
+
+        }
+
+        $("#hdnstatInstructions").val("");
+        if ($(".statusInstructions").is(":checked")) {
+
+            statinstructionsvalue = "1";
+            console.log(statinstructionsvalue);
+
+        }
+
+        $("#addForm").submit();
+    }
+
+    $('#ddlGroups').change(function () {
+        if ($("#ddlGroups").val() != "") {
+            var GroupID = $("#ddlGroups").val();
+
+            var htmlinfo = "";
+            var htmlsize = "";
+            $.ajax({
+                type: "GET",
+                datatype: 'json',
+                data: { id: GroupID },
+                url: '@Url.Action("GetInfosAndSizes", "Products")',
+                success: function (result) {
+                    $('.price').remove();
+                    $.each(result.InfoList, function (index, value) {
+                        htmlinfo += '<div class="checkbox"><label><input type="checkbox" value="' + value.InfoID + '" class="infoList"> ' + value.InfoName + '</label></div>';
+                    });
+                    $('#divInfo').html(htmlinfo);
+                    $('#divInfo').show();
+
+
+                    $.each(result.SizeList, function (index, value) {
+                        htmlsize += '<div class="checkbox"><label><input type="checkbox" value="' + value.SizeID + '" onclick="ShowtxtPrice(this)" class="size"> ' + value.Size + '</label></div>';
+                    });
+
+                    $('#divSize').html(htmlsize);
+                    $('#divSize').show();
+
+                    //$('#divPrice > div').map(function () {
+                    //    console.log(this.id);
+                    //});
+
+
+                },
+                error: function (err) {
+                    $(document).trigger("add-alerts", {
+                        message: err,
+                        priority: "error"
+                    });
+                }
+
+            });
+
+
+        }
+        else {
+
+            $('#divInfo').html("");
+            $('#divSize').html("");
+
+        }
+
+    });
+
+
+    function ShowtxtPrice(that) {
+        var htmlprice = "";
+
+        if ($(that).prop('checked')) {
+            htmlprice += '<input type="text" class="price col-md-offset-2" id="size_price" placeholder="Price" value="">';
+
+            $(that).parent().parent().append(htmlprice);
+
+
+        }
+        else {
+
+            $('.price').remove();
+            //$('#divPrice').hide();
+        }
+
+    }
+
+
+</script>
+
+
+
+@*<section class="mainbody">
+        <div class="container edit_product">
+            <h2>Add Product</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Name</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" id="inputPassword" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword" class="col-sm-2 control-label">Title</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" id="inputPassword" placeholder="Title">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword" class="col-sm-2 control-label">Tag</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" id="inputPassword" placeholder="Tag">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword" class="col-sm-2 control-label">Categories</label>
+                            <div class="col-sm-5" id="more_cat">
+                                <div class="row clone_row">
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="inputPassword" placeholder="Categories">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <button class="btn btn-warning btn-block add_more" type="button">Add More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword" class="col-sm-2 control-label">Image</label>
+                            <div class="col-sm-5">
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <span class="btn btn-primary btn-file">
+                                            Browse… <input type="file" multiple="">
+                                        </span>
+                                    </span>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword" class="col-sm-2 control-label">Priority</label>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control" id="inputPassword" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputPassword" class="col-sm-2 control-label">Cake Group:</label>
+                            <div class="col-sm-5">
+                                <select class="custome_select">
+                                    <option>Info</option>
+                                    <option>Sizes</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword" class="col-sm-2 control-label">Info:</label>
+                            <div class="col-sm-10">
+
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Fresh cream
+                                    </label>
+                                </div>
+
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Butter cream
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Icing
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Chocolate
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Minimum order of 6
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Size refers to board
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> This design is only possible in 2 digit numbers containing the number ‘1’ e.g. 18, 21,31 etc. enabling it to fit on one board.
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Pricing is based on two numbers on two separate boards.If you require a single number, this can be ordered on the price based on one board.  Please contact your preferred branch to place your order by phone or instore.
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Coloured cream may stain
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Colour & design may vary
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Toys/Decorative items not included
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Stand not included
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Requires 24 hours notice
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Requires 2 days notice
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Requires 3 days notice
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Requires 7 days notice
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Subject to availability.  Please contact your collecting branch before placing your order.
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> All images provided are courtesy of our customer
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Sugar balls subject to availability
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Doll may vary
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword" class="col-sm-2 control-label">Sizes</label>
+                            <div class="col-sm-5">
+                                <select name="" class="custome_select" id="size">
+                                    <option value="0">8"</option>
+                                    <option value="0">10"</option>
+                                    <option value="0">12"</option>
+                                    <option value="0">14"</option>
+                                    <option value="92.99">16"</option>
+                                    <option value="115.99">18"</option>
+                                    <option value="147.99">20"</option>
+                                    <option value="174.99">16" x 28"</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="size_price" placeholder="" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword" class="col-sm-2 control-label">Additional info</label>
+                            <div class="col-sm-5">
+                                <div class="checkbox" style="padding-top:10px">
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword" class="col-sm-2 control-label">Instructions</label>
+                            <div class="col-sm-5">
+                                <div class="checkbox" style="padding-top:10px">
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword" class="col-sm-2 control-label">Status</label>
+                            <div class="col-sm-5">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Enable
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Enable
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-5"><button class="btn btn-warning btn-lg">SAVE</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>*@
+
+

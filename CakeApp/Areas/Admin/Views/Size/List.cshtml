@@ -1,0 +1,638 @@
+﻿@model List<CakeApp.Areas.Admin.Models.Attributes.SizeModel>
+@using CakeApp.Helper
+
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    ViewBag.Description = "Attribute";
+    ViewBag.href = "/admin/Tag/List";
+    ViewBag.SubDescription = "Size";
+}
+
+
+<section class="mainbody">
+    <div class="container">
+        <h2>Size List</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                <div class="portlet light">
+
+                    <div class="portlet-body">
+                        <div class="table-toolbar">
+                            <div class="row">
+                                <div data-alerts="alerts" data-fade="3000"></div>
+                                @Html.CustomValidationSummary("Error")
+                                <div class="col-md-6 pull-right" style="width:auto;">
+                                    <div class="btn-group">
+                                        <button id="sample_editable_1_new" class="btn" onclick="window.location.href = '@Url.Action("AddSize", "Size")'">
+                                            Add Size&nbsp;<i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <table class="table table-striped table-hover table-bordered" id="sizelisting">
+                            <thead>
+                                <tr id="filterrow">
+                                    <td>Name</td>
+                                    <td>Title</td>
+                                    <td>Tags</td>
+                                    <td>Priority</td>
+                                    @*<td>Price</td>*@
+                                    <td>Status</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Title</th>
+                                    <th>Groups</th>
+                                    <th>Priority</th>
+                                    @*<th>Price</th>*@
+                                    <th style="text-align:center;">Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model.Count > 0)
+                                {
+                                    foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <input type="hidden" value="@item.SizeID" class="infoid" />
+                                                @Html.Label("", item.Size, new { @class = "infoname" })
+                                            </td>
+                                            <td>
+                                                @Html.Label("", @item.Title, new { @class = "title" })
+                                            </td>
+                                           
+                                            <td>
+                                                @*<input type="hidden" value="@item.GroupID" class="groupid" />*@
+                                                @*@Html.Label("", item.GroupName, new { @class = "group" })*@
+                                                @Html.Label("", item.GroupNames, new { @class = "group" })
+
+                                            </td>
+                                            <td>
+                                                @Html.Label("", item.Priority.ToString(), new { @class = "priority" })
+                                            </td>
+                                            @*<td>
+                                                @Html.Label("", @item.Price.ToString(), new { @class = "price" })
+                                            </td>*@
+                                            <td align="center">
+                                                @if (item.Status == "Enable")
+                                                {
+                                                    <i class="fa fa-check status" data-value="@item.Status" data-search="@item.Status"></i><span style="text-indent: -9999px; display: block;">@item.Status</span>
+                                                }
+                                                else
+                                                {
+                                                    <i class="fa fa-close status" data-value="@item.Status" data-search="@item.Status"></i><span style="text-indent: -9999px; display: block;">@item.Status</span>
+                                                }
+
+                                            </td>
+
+                                            <td>
+                                                <input type="hidden" id="hdnInfo" value="@item.SizeID">
+                                                <a class="edit btn btn-default " href='@Url.Action("EditSize", "Size", new { @id = @item.SizeID })'>
+                                                    <i class="fa fa-edit"></i>Edit
+                                                </a>
+                                                <a class="delete btn btn-default" href="javascript:;" data-value="@item.SizeID">
+                                                    <i class="fa fa-close"></i> &nbsp;Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- END EXAMPLE TABLE PORTLET-->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+<script>
+
+    var TableEditable = function () {
+
+        var handleTable = function () {
+
+            function restoreRow(oTable, nRow) {
+                var aData = oTable.fnGetData(nRow);
+                var jqTds = $('>td', nRow);
+
+                for (var i = 0, iLen = jqTds.length; i < iLen; i++) {
+                    oTable.fnUpdate(aData[i], nRow, i, false);
+                }
+
+                oTable.fnDraw();
+            }
+
+
+
+            var table = $('#sizelisting');
+
+            var count = 0;
+
+            $('#sizelisting').find("thead>tr").eq(0).find("td").each(function () {
+                if (count < ($('#sizelisting thead  td').length - 1)) {
+                    var title = $('#sizelisting thead th').eq($(this).index()).text();
+
+                    if ($(this).index() == 4) {
+                        $(this).html('<input type="radio"  class="form-control input-small radio_left status" name="rd" value="Enable"><span class="text-lext">Enable</span> <input type="radio" class="form-control input-small radio_left status" value="Disable" name="rd" > <span class="text-lext">Disable</span>');
+                    }
+
+                    else {
+                        $(this).html('<input id="' + count + '" type="text" placeholder="Search ' + title + '" class="form-control input-inline" />');
+                    }
+                    count++;
+                }
+            });
+
+
+            var oTable = table.dataTable({
+
+                // Uncomment below line("dom" parameter) to fix the dropdown overflow issue in the datatable cells. The default datatable layout
+                // setup uses scrollable div(table-scrollable) with overflow:auto to enable vertical scroll(see: assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js).
+                // So when dropdowns used the scrollable div should be removed.
+                //"dom": "<'row'<'col-md-6 col-sm-12'l><'col-md-6 col-sm-12'f>r>t<'row'<'col-md-5 col-sm-12'i><'col-md-7 col-sm-12'p>>",
+
+                "lengthMenu": [
+                    [5, 15, 20, -1],
+                    [5, 15, 20, "All"] // change per page values here
+                ],
+
+                // Or you can use remote translation file
+                //"language": {
+                //   url: '//cdn.datatables.net/plug-ins/3cfcc339e89/i18n/Portuguese.json'
+                //},
+
+                // set the initial value
+                "pageLength": 10,
+
+                "language": {
+                    "lengthMenu": " _MENU_ records"
+                },
+                "columnDefs": [{ // set default column settings
+                    'orderable': true,
+                    'targets': [0]
+                }, {
+                    "searchable": true,
+                    "targets": [0]
+                }],
+                "order": [
+                    [3, "asc"]
+                ] // set first column as a default sort by asc
+            });
+
+
+            var tab = $('#sizelisting').DataTable();
+            $("#sizelisting thead input").bind('keyup change', function () {
+
+                tab
+                    .column($(this).parent().index() + ':visible')
+                    .search(this.value)
+                    .draw();
+            });
+
+
+            $("#sizelisting thead input[type='radio']").bind('click', function () {
+                console.log(this.value);
+                console.log($(this).parent().index());
+                var reg = this.value;
+                //tab.search(this.value, true, true, true).draw();
+                tab
+                    .column($(this).parent().index())
+                    .search(reg, true, true, true)
+                    .draw();
+            });
+
+
+            var tableWrapper = $("#sample_editable_1_wrapper");
+
+            tableWrapper.find(".dataTables_length select").select2({
+                showSearchInput: false //hide search box with special css class
+            }); // initialize select2 dropdown
+
+            var nEditing = null;
+            var nNew = false;
+
+            
+
+            table.on('click', '.delete', function (e) {
+                e.preventDefault();
+
+                if (confirm("Are you sure to delete this row ?") == false) {
+                    return;
+                }
+
+                var SizeID = $(this).data('value');
+                var nRow = $(this).parents('tr')[0];
+                console.log(SizeID);
+
+                $.ajax({
+                    type: "POST",
+                    datatype: 'json',
+                    data: { id: SizeID },
+                    url: '@Url.Action("DeleteSize", "Size")',
+                    success: function (result) {
+
+                        if (result == "true") {
+
+                            oTable.fnDeleteRow(nRow);
+                            $(document).trigger("add-alerts", {
+                                message: "Deleted successfully",
+                                priority: "success"
+                            });
+                        }
+                        else {
+                            $(document).trigger("add-alerts", {
+                                message: result,
+                                priority: "error"
+                            });
+
+                        }
+
+                    },
+                    error: function (err) {
+                        $(document).trigger("add-alerts", {
+                            message: err,
+                            priority: "error"
+                        });
+                    }
+
+                });
+            });
+        }
+
+        return {
+
+            //main function to initiate the module
+            init: function () {
+                handleTable();
+            }
+
+        };
+
+    }();
+    jQuery(document).ready(function () {
+
+        TableEditable.init();
+    });
+</script>
+
+@*<script>
+    var TableEditable = function () {
+
+        var handleTable = function () {
+
+            function restoreRow(oTable, nRow) {
+                var aData = oTable.fnGetData(nRow);
+                var jqTds = $('>td', nRow);
+
+                for (var i = 0, iLen = jqTds.length; i < iLen; i++) {
+                    oTable.fnUpdate(aData[i], nRow, i, false);
+                }
+
+                oTable.fnDraw();
+
+               
+
+            }
+
+            var table = $('#sizelisting');
+
+            var count = 0;
+
+            $('#sizelisting').find("thead>tr").eq(0).find("td").each(function () {
+                if (count < ($('#sizelisting thead  td').length - 1)) {
+                    var title = $('#sizelisting thead th').eq($(this).index()).text();
+
+                    if ($(this).index() == 5) {
+                        $(this).html('<input type="radio"  class="form-control input-small radio_left status" name="rd" value="Enable"><span class="text-lext">Enable</span> <input type="radio" class="form-control input-small radio_left status" value="Disable" name="rd" > <span class="text-lext">Disable</span>');
+                    }
+
+                    else {
+                        $(this).html('<input id="' + count + '" type="text" placeholder="Search ' + title + '" class="form-control input-inline" />');
+                    }
+                    count++;
+                }
+            });
+
+            //function editRow(oTable, nRow) {
+            //    var aData = oTable.fnGetData(nRow);
+            //    var jqTds = $('>td', nRow);
+
+            //    jqTds[0].innerHTML = '<input type="text" class="form-control input-small" value="' + aData[0] + '">';
+            //    jqTds[1].innerHTML = '<input type="text" class="form-control input-small" value="' + aData[1] + '">';
+
+            //    jqTds[2].innerHTML = '<select name="" class="custome_select"><option value="' + aData[2] + '">' + aData[2] + '</option></select>';
+            //    jqTds[3].innerHTML = '<input type="radio" class="form-control input-small radio_left" value="' + aData[3] + '"><span class="text-lext">Is Deleted</span> <input type="radio" class="form-control input-small radio_left" value="' + aData[3] + '"> <span class="text-lext">Isactive</span>';
+
+
+
+            //    jqTds[4].innerHTML = '<a class="edit btn btn-default" href=""> <i href="" class="fa fa-save"></i>&nbsp;Save</a> <a class="cancel btn btn-default" href="" ><i href="" class="fa fa-close"></i>&nbsp;Cancel</a>';
+            //}
+            //function editRow(oTable, nRow, CategoryID) {
+            //    var jqTds = $('>td', nRow);
+            //    var SizeID = $(jqTds[0]).children(".sizeid").val();
+            //    var SizeName = $(jqTds[0]).children(".sizename").text();
+            //    var title = $(jqTds[1]).children(".title").text();
+            //    var groupnames = $(jqTds[2]).children(".groupnames").text();
+            //    var price = $(jqTds[3]).children(".price").text();
+            //    var priority = $(jqTds[4]).children(".priority").text();
+            //    var status = $(jqTds[5]).children(".status").data("value");
+
+            //    var rbEnabledChecked = "";
+            //    var rbDisabledChecked = "";
+            //    if (status == "Enable") {
+            //        rbEnabledChecked = "checked";
+            //        rbDisabledChecked = "";
+            //    }
+            //    else {
+            //        rbEnabledChecked = "";
+            //        rbDisabledChecked = "checked";
+
+            //    }
+               
+
+            //    jqTds[0].innerHTML = '<input type="hidden" class="form-control input-small hdnsizeid" value="' + SizeID + '"><input type="text" class="form-control input-small sizename" value="' + SizeName + '">';
+            //    jqTds[1].innerHTML = '<input type="text" class="form-control input-small title" value="' + title + '">';
+            //            //jqTds[2].innerHTML = '<img src="'+img+'" class="thumbnail" width="25%">';
+            //    jqTds[2].innerHTML = '<input type="text" class="form-control input-small groupnames" value="' + groupnames + '">';
+            //    jqTds[3].innerHTML = '<input type="text" class="form-control input-small price" value="' + price + '">';
+            //    jqTds[4].innerHTML = '<input type="number" step="10" class="form-control input-small priority" value="' + priority + '" style="width:20px;"/>';
+            //    jqTds[5].innerHTML = '<input type="radio" class="form-control input-small radio_left status" name="rd" value="1" ' + rbEnabledChecked + ' data-value="' + status + '" data-search="' + status + '"><span class="text-lext">Enable</span> <input type="radio" class="form-control input-small radio_left status" value="0" name="rd" ' + rbDisabledChecked + ' data-value="' + status + '" data-search="' + status + '"> <span class="text-lext">Disable</span>';
+            //    jqTds[6].innerHTML = '<a class="edit btn btn-default" href=""><i href="" class="fa fa-save"></i>Save</a> <a class="cancel btn btn-default" href="" ><i href="" class="fa fa-close"></i>&nbsp;Cancel</a>';
+
+
+            //}
+
+            //function saveRow(oTable, nRow) {
+            //    var jqInputs = $('input', nRow);
+            //    var jqSelect = $('select', nRow);
+            //    var categoryid = $(nRow).find(".hdncategoryid").val();
+            //    var categoryname = $(nRow).find(".categoryname").val();
+            //    var categorytitle = $(nRow).find(".categorytitle").val();
+            //    var tagid = $(nRow).find("select option:selected").val();
+            //    var tagname = $(nRow).find("select option:selected").text();
+            //    var categorypriority = $(nRow).find(".categorypriority").val();
+            //    var categorystatus = $(nRow).find(".categorystatus:checked").val() == "1" ? "Enable" : "Disable";
+            //    if (categoryid && categoryname && categorytitle && tagid && tagname && categorypriority && categorystatus) {
+            //        $.ajax({
+            //            url: "/Categories/EditCategories",
+            //            datatype: "json",
+            //            type: "POST",
+            //            contentType: 'application/json',
+            //            data: JSON.stringify({ CategoryID: categoryid, CategoryName: categoryname, Title: categorytitle, TagID: tagid, Priority: categorypriority, Status: categorystatus }),
+            //            success: function (data) {
+            //                if (data == "true") {
+            //                    oTable.fnUpdate('<input class="categoryid" type="hidden" value="' + categoryid + '"><label class="categoryname" for="">' + categoryname + '</label>', nRow, 0, false);
+            //                    oTable.fnUpdate('<label for="" class="title">' + categorytitle + '</label>', nRow, 1, false);
+            //                    //oTable.fnUpdate("<img src='" + categoryimg + "' class='thumbnail' width='25%'>", nRow, 2, false);
+            //                    oTable.fnUpdate('<input class="tagid" type="hidden" value="' + tagid + '"><label class="tag" for="">' + tagname + '</label>', nRow, 2, false);
+            //                    oTable.fnUpdate('<label for="" class="priority">' + categorypriority + '</label>', nRow, 3, false);
+            //                    console.log(categorystatus);
+            //                    if (categorystatus == "Enable")
+            //                        oTable.fnUpdate('<i class="fa fa-check status" data-value="' + categorystatus + '" data-search="' + categorystatus + '"></i><span style="text-indent: -9999px; display: block;">' + categorystatus + '</span>', nRow, 4, false);
+            //                    else
+            //                        oTable.fnUpdate('<i class="fa fa-close status" data-value="' + categorystatus + '" data-search="' + categorystatus + '"></i><span style="text-indent: -9999px; display: block;">' + categorystatus + '</span>', nRow, 4, false);
+
+            //                    oTable.fnUpdate('<a class="edit btn btn-default" href=""><i href="" class="fa fa-edit"></i>Edit</a> <a class="delete btn btn-default" href=""><i href="" class="fa fa-close"></i>&nbsp;Delete</a>', nRow, 5, false);
+            //                    oTable.fnDraw();
+            //                    $(document).trigger("add-alerts", {
+            //                        message: "Updated successfully!",
+            //                        priority: "success"
+            //                    });
+            //                }
+
+            //            },
+            //            error: function (err) {
+            //                $(document).trigger("add-alerts", {
+            //                    message: err,
+            //                    priority: "error"
+            //                });
+            //            }
+            //        });
+            //    }
+            //    else {
+            //        $(document).trigger("add-alerts", {
+            //            message: "Wrong Input",
+            //            priority: "error"
+            //        });
+            //        restoreRow(oTable, nRow);
+            //    }
+            //}
+
+            //function cancelEditRow(oTable, nRow) {
+            //    var jqInputs = $('input', nRow);
+            //    oTable.fnUpdate(jqInputs[0].value, nRow, 0, false);
+            //    oTable.fnUpdate(jqInputs[1].value, nRow, 1, false);
+            //    oTable.fnUpdate(jqInputs[2].value, nRow, 2, false);
+            //    oTable.fnUpdate(jqInputs[3].value, nRow, 3, false);
+            //    oTable.fnUpdate(jqInputs[4].value, nRow, 4, false);
+            //    oTable.fnUpdate('<a class="edit btn btn-default" href=""><i href="" class="fa fa-edit"></i>Edit</a>', nRow, 5, false);
+            //    oTable.fnDraw();
+            //}
+
+            var table = $('#sizelisting');
+
+            var oTable = table.dataTable({
+
+                // Uncomment below line("dom" parameter) to fix the dropdown overflow issue in the datatable cells. The default datatable layout
+                // setup uses scrollable div(table-scrollable) with overflow:auto to enable vertical scroll(see: assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js).
+                // So when dropdowns used the scrollable div should be removed.
+                //"dom": "<'row'<'col-md-6 col-sm-12'l><'col-md-6 col-sm-12'f>r>t<'row'<'col-md-5 col-sm-12'i><'col-md-7 col-sm-12'p>>",
+
+                "lengthMenu": [
+                    [5, 15, 20, -1],
+                    [5, 15, 20, "All"] // change per page values here
+                ],
+
+                // Or you can use remote translation file
+                //"language": {
+                //   url: '//cdn.datatables.net/plug-ins/3cfcc339e89/i18n/Portuguese.json'
+                //},
+
+                // set the initial value
+                "pageLength": 10,
+
+                "language": {
+                    "lengthMenu": " _MENU_ records"
+                },
+                "columnDefs": [{ // set default column settings
+                    'orderable': true,
+                    'targets': [0]
+                }, {
+                    "searchable": true,
+                    "targets": [0]
+                }],
+                "order": [
+                    [4, "desc"]
+                ] // set first column as a default sort by asc
+            });
+
+            var tableWrapper = $("#sample_editable_1_wrapper");
+
+            tableWrapper.find(".dataTables_length select").select2({
+                showSearchInput: false //hide search box with special css class
+            }); // initialize select2 dropdown
+
+            var nEditing = null;
+            var nNew = false;
+
+            //$('#sample_editable_1_new').click(function (e) {
+            //    e.preventDefault();
+
+            //    if (nNew && nEditing) {
+            //        if (confirm("Previose row not saved. Do you want to save it ?")) {
+            //            saveRow(oTable, nEditing); // save
+            //            $(nEditing).find("td:first").html("Untitled");
+            //            nEditing = null;
+            //            nNew = false;
+
+            //        } else {
+            //            oTable.fnDeleteRow(nEditing); // cancel
+            //            nEditing = null;
+            //            nNew = false;
+
+            //            return;
+            //        }
+            //    }
+
+            //    var aiNew = oTable.fnAddData(['', '', '', '', '', '']);
+            //    var nRow = oTable.fnGetNodes(aiNew[0]);
+            //    editRow(oTable, nRow);
+            //    nEditing = nRow;
+            //    nNew = true;
+            //});
+
+
+            var tab = $('#sizelisting').DataTable();
+            $("#sizelisting thead input").bind('keyup change', function () {
+
+                tab
+                    .column($(this).parent().index() + ':visible')
+                    .search(this.value)
+                    .draw();
+            });
+
+            $("#sizelisting thead input[type='radio']").bind('click', function () {
+                console.log(this.value);
+                console.log($(this).parent().index());
+                var reg = this.value;
+                //tab.search(this.value, true, true, true).draw();
+                tab
+                    .column($(this).parent().index())
+                    .search(reg, true, true, true)
+                    .draw();
+            });
+
+
+
+
+            table.on('click', '.delete', function (e) {
+                e.preventDefault();
+
+                if (confirm("Are you sure to delete this row ?") == false) {
+                    return;
+                }
+
+               
+
+                var SizeID = $(this).data('value');
+                var nRow = $(this).parents('tr')[0];
+                console.log(SizeID);
+
+                $.ajax({
+                    type: "POST",
+                    datatype: 'json',
+                    data: { id: SizeID },
+                    url: '@Url.Action("DeleteSize", "Size")',
+                    success: function (result) {
+                        console.log(result)
+                        if (result == "true") {
+
+                            oTable.fnDeleteRow(nRow);
+                            $(document).trigger("add-alerts", {
+                                message: "Deleted successfully",
+                                priority: "success"
+                            });
+                        }
+                        else {
+                            $(document).trigger("add-alerts", {
+                                message: result,
+                                priority: "error"
+                            });
+
+                        }
+
+                    },
+                    error: function (err) {
+                        $(document).trigger("add-alerts", {
+                            message: err,
+                            priority: "error"
+                        });
+                    }
+
+                });
+
+
+            });
+
+            table.on('click', '.cancel', function (e) {
+                e.preventDefault();
+                if (nNew) {
+                    oTable.fnDeleteRow(nEditing);
+                    nEditing = null;
+                    nNew = false;
+                } else {
+                    restoreRow(oTable, nEditing);
+                    nEditing = null;
+                }
+            });
+
+            table.on('click', '.edit', function (e) {
+                e.preventDefault();
+
+                /* Get the row as a parent of the link that was clicked on */
+                var nRow = $(this).parents('tr')[0];
+
+                if (nEditing !== null && nEditing != nRow) {
+                    /* Currently editing - but not this row - restore the old before continuing to edit mode */
+                    restoreRow(oTable, nEditing);
+                    editRow(oTable, nRow);
+                    nEditing = nRow;
+                } else if (nEditing == nRow && this.innerHTML == "Save") {
+                    /* Editing this row and want to save it */
+                    saveRow(oTable, nEditing);
+                    nEditing = null;
+                    alert("Updated! Do not forget to do some ajax to sync with backend :)");
+                } else {
+                    /* No edit in progress - let's start one */
+                    editRow(oTable, nRow);
+                    nEditing = nRow;
+                }
+            });
+        }
+
+        return {
+
+            //main function to initiate the module
+            init: function () {
+                handleTable();
+            }
+
+        };
+
+    }();
+    jQuery(document).ready(function () {
+
+        TableEditable.init();
+    });
+</script>*@

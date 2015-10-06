@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    ViewBag.Description = "Dashboard";
+}
+
+<section class="mainbody">
+    <div class="container">
+        <ul class="dashboard_list">
+            <li>
+                <div class="linkbox blue_bak" onclick="window.location.href = '/admin/Products/ProductList'">
+                    <p>1000</p>
+                    <b>Product</b>
+                </div>
+            </li>
+            <li>
+                <div class="linkbox red_bak" onclick="window.location.href = '/admin/Categories/CategoryList'">
+                    <p>1000</p>
+                    <b>Category</b>
+                </div>
+            </li>
+            <li>
+                <div class="linkbox green_bak" onclick="window.location.href = '/admin/Tag/List'">
+                    <p>1000</p>
+                    <b>Attribute</b>
+                </div>
+            </li>
+            <li>
+                <div class="linkbox gray_bak" onclick="window.location.href = '/admin/SyncProcess/SyncProcess'">
+                    <p>1000</p>
+                    <b>Sync</b>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+

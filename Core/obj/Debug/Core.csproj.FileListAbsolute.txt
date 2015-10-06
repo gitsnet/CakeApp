@@ -1,0 +1,249 @@
+E:\Basudeb\E-Liquor\ELiquorWebApi\Core\bin\Debug\Core.dll
+E:\Basudeb\E-Liquor\ELiquorWebApi\Core\bin\Debug\Core.pdb
+E:\Basudeb\E-Liquor\ELiquorWebApi\Core\obj\Debug\Core.dll
+E:\Basudeb\E-Liquor\ELiquorWebApi\Core\obj\Debug\Core.pdb
+E:\Basudeb\E-Liquor\ELiquorWebApi\Core\bin\Debug\EntityFramework.dll
+E:\Basudeb\E-Liquor\ELiquorWebApi\Core\bin\Debug\EntityFramework.SqlServer.dll
+E:\Basudeb\E-Liquor\ELiquorWebApi\Core\bin\Debug\EntityFramework.xml
+E:\Basudeb\E-Liquor\ELiquorWebApi\Core\bin\Debug\EntityFramework.SqlServer.xml
+E:\Basudeb\E-Liquor\ELiquorWebApi\Core\bin\Debug\Newtonsoft.Json.dll
+E:\Basudeb\E-Liquor\ELiquorWebApi\Core\bin\Debug\Newtonsoft.Json.xml
+E:\Basudeb\E-Liquor\ELiquorWebApi\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+E:\Basudeb\Dial4Medicine\Dial4Medicine\Core\bin\Debug\Core.dll
+E:\Basudeb\Dial4Medicine\Dial4Medicine\Core\bin\Debug\Core.pdb
+E:\Basudeb\Dial4Medicine\Dial4Medicine\Core\bin\Debug\EntityFramework.dll
+E:\Basudeb\Dial4Medicine\Dial4Medicine\Core\bin\Debug\EntityFramework.SqlServer.dll
+E:\Basudeb\Dial4Medicine\Dial4Medicine\Core\bin\Debug\Newtonsoft.Json.dll
+E:\Basudeb\Dial4Medicine\Dial4Medicine\Core\bin\Debug\EntityFramework.xml
+E:\Basudeb\Dial4Medicine\Dial4Medicine\Core\bin\Debug\EntityFramework.SqlServer.xml
+E:\Basudeb\Dial4Medicine\Dial4Medicine\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+E:\Basudeb\Dial4Medicine\Dial4Medicine\Core\obj\Debug\Core.dll
+E:\Basudeb\Dial4Medicine\Dial4Medicine\Core\obj\Debug\Core.pdb
+D:\Projects\Dial4Medicine\Core\bin\Debug\Core.dll
+D:\Projects\Dial4Medicine\Core\bin\Debug\Core.pdb
+D:\Projects\Dial4Medicine\Core\bin\Debug\EntityFramework.dll
+D:\Projects\Dial4Medicine\Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\Dial4Medicine\Core\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\Dial4Medicine\Core\bin\Debug\EntityFramework.xml
+D:\Projects\Dial4Medicine\Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\Dial4Medicine\Core\obj\Debug\Core.dll
+D:\Projects\Dial4Medicine\Core\obj\Debug\Core.pdb
+D:\Dial4Medicine\Core\bin\Debug\Core.dll
+D:\Dial4Medicine\Core\bin\Debug\Core.pdb
+D:\Dial4Medicine\Core\bin\Debug\EntityFramework.dll
+D:\Dial4Medicine\Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dial4Medicine\Core\bin\Debug\Newtonsoft.Json.dll
+D:\Dial4Medicine\Core\bin\Debug\EntityFramework.xml
+D:\Dial4Medicine\Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dial4Medicine\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\Dial4Medicine\Core\obj\Debug\Core.dll
+D:\Dial4Medicine\Core\obj\Debug\Core.pdb
+D:\Projects\Dial4Medicine\Dial4Medicine\Core\bin\Debug\Core.dll
+D:\Projects\Dial4Medicine\Dial4Medicine\Core\bin\Debug\Core.pdb
+D:\Projects\Dial4Medicine\Dial4Medicine\Core\bin\Debug\EntityFramework.dll
+D:\Projects\Dial4Medicine\Dial4Medicine\Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\Dial4Medicine\Dial4Medicine\Core\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\Dial4Medicine\Dial4Medicine\Core\bin\Debug\EntityFramework.xml
+D:\Projects\Dial4Medicine\Dial4Medicine\Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\Dial4Medicine\Dial4Medicine\Core\obj\Debug\Core.dll
+D:\Projects\Dial4Medicine\Dial4Medicine\Core\obj\Debug\Core.pdb
+D:\Projects\Dial4Medicine\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+E:\Project\Dial4Medicine1\Dial4Medicine\Core\bin\Debug\Core.dll
+E:\Project\Dial4Medicine1\Dial4Medicine\Core\bin\Debug\Core.pdb
+E:\Project\Dial4Medicine1\Dial4Medicine\Core\bin\Debug\EntityFramework.dll
+E:\Project\Dial4Medicine1\Dial4Medicine\Core\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project\Dial4Medicine1\Dial4Medicine\Core\bin\Debug\Newtonsoft.Json.dll
+E:\Project\Dial4Medicine1\Dial4Medicine\Core\bin\Debug\EntityFramework.xml
+E:\Project\Dial4Medicine1\Dial4Medicine\Core\bin\Debug\EntityFramework.SqlServer.xml
+E:\Project\Dial4Medicine1\Dial4Medicine\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+E:\Project\Dial4Medicine1\Dial4Medicine\Core\obj\Debug\Core.dll
+E:\Project\Dial4Medicine1\Dial4Medicine\Core\obj\Debug\Core.pdb
+D:\Projects\AutoBid\Core\bin\Debug\Core.dll
+D:\Projects\AutoBid\Core\bin\Debug\Core.pdb
+D:\Projects\AutoBid\Core\bin\Debug\Autofac.dll
+D:\Projects\AutoBid\Core\bin\Debug\Autofac.Integration.Mvc.dll
+D:\Projects\AutoBid\Core\bin\Debug\EntityFramework.dll
+D:\Projects\AutoBid\Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\AutoBid\Core\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\AutoBid\Core\bin\Debug\System.Web.Mvc.dll
+D:\Projects\AutoBid\Core\bin\Debug\Autofac.xml
+D:\Projects\AutoBid\Core\bin\Debug\Autofac.Integration.Mvc.xml
+D:\Projects\AutoBid\Core\bin\Debug\EntityFramework.xml
+D:\Projects\AutoBid\Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\AutoBid\Core\bin\Debug\System.Web.Mvc.xml
+D:\Projects\AutoBid\Core\obj\Debug\Core.dll
+D:\Projects\AutoBid\Core\obj\Debug\Core.pdb
+D:\Projects\AutoBid\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\piya\AutoBid\AutoBid\Core\bin\Debug\Core.dll
+D:\piya\AutoBid\AutoBid\Core\bin\Debug\Core.pdb
+D:\piya\AutoBid\AutoBid\Core\bin\Debug\Autofac.dll
+D:\piya\AutoBid\AutoBid\Core\bin\Debug\Autofac.Integration.Mvc.dll
+D:\piya\AutoBid\AutoBid\Core\bin\Debug\EntityFramework.dll
+D:\piya\AutoBid\AutoBid\Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\piya\AutoBid\AutoBid\Core\bin\Debug\Newtonsoft.Json.dll
+D:\piya\AutoBid\AutoBid\Core\bin\Debug\Autofac.xml
+D:\piya\AutoBid\AutoBid\Core\bin\Debug\Autofac.Integration.Mvc.xml
+D:\piya\AutoBid\AutoBid\Core\bin\Debug\EntityFramework.xml
+D:\piya\AutoBid\AutoBid\Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\piya\AutoBid\AutoBid\Core\obj\Debug\Core.dll
+D:\piya\AutoBid\AutoBid\Core\obj\Debug\Core.pdb
+D:\piya\AutoBid\AutoBid\AutoBid\Core\bin\Debug\Core.dll
+D:\piya\AutoBid\AutoBid\AutoBid\Core\bin\Debug\Core.pdb
+D:\piya\AutoBid\AutoBid\AutoBid\Core\bin\Debug\Autofac.dll
+D:\piya\AutoBid\AutoBid\AutoBid\Core\bin\Debug\Autofac.Integration.Mvc.dll
+D:\piya\AutoBid\AutoBid\AutoBid\Core\bin\Debug\EntityFramework.dll
+D:\piya\AutoBid\AutoBid\AutoBid\Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\piya\AutoBid\AutoBid\AutoBid\Core\bin\Debug\Newtonsoft.Json.dll
+D:\piya\AutoBid\AutoBid\AutoBid\Core\bin\Debug\Autofac.xml
+D:\piya\AutoBid\AutoBid\AutoBid\Core\bin\Debug\Autofac.Integration.Mvc.xml
+D:\piya\AutoBid\AutoBid\AutoBid\Core\bin\Debug\EntityFramework.xml
+D:\piya\AutoBid\AutoBid\AutoBid\Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\piya\AutoBid\AutoBid\AutoBid\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\piya\AutoBid\AutoBid\AutoBid\Core\obj\Debug\Core.dll
+D:\piya\AutoBid\AutoBid\AutoBid\Core\obj\Debug\Core.pdb
+E:\Project\Core\bin\Debug\Core.dll
+E:\Project\Core\bin\Debug\Core.pdb
+E:\Project\Core\bin\Debug\Autofac.dll
+E:\Project\Core\bin\Debug\Autofac.Integration.Mvc.dll
+E:\Project\Core\bin\Debug\EntityFramework.dll
+E:\Project\Core\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project\Core\bin\Debug\Newtonsoft.Json.dll
+E:\Project\Core\bin\Debug\System.Web.Mvc.dll
+E:\Project\Core\bin\Debug\Autofac.xml
+E:\Project\Core\bin\Debug\Autofac.Integration.Mvc.xml
+E:\Project\Core\bin\Debug\EntityFramework.xml
+E:\Project\Core\bin\Debug\EntityFramework.SqlServer.xml
+E:\Project\Core\bin\Debug\System.Web.Mvc.xml
+E:\Project\Core\obj\Debug\Core.dll
+E:\Project\Core\obj\Debug\Core.pdb
+D:\Autobid\Autobid\Core\bin\Debug\Core.dll
+D:\Autobid\Autobid\Core\bin\Debug\Core.pdb
+D:\Autobid\Autobid\Core\bin\Debug\Autofac.dll
+D:\Autobid\Autobid\Core\bin\Debug\Autofac.Integration.Mvc.dll
+D:\Autobid\Autobid\Core\bin\Debug\EntityFramework.dll
+D:\Autobid\Autobid\Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\Autobid\Autobid\Core\bin\Debug\Newtonsoft.Json.dll
+D:\Autobid\Autobid\Core\bin\Debug\System.Web.Mvc.dll
+D:\Autobid\Autobid\Core\bin\Debug\Autofac.xml
+D:\Autobid\Autobid\Core\bin\Debug\Autofac.Integration.Mvc.xml
+D:\Autobid\Autobid\Core\bin\Debug\EntityFramework.xml
+D:\Autobid\Autobid\Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\Autobid\Autobid\Core\bin\Debug\System.Web.Mvc.xml
+D:\Autobid\Autobid\Core\obj\Debug\Core.dll
+D:\Autobid\Autobid\Core\obj\Debug\Core.pdb
+D:\Autobid\Autobid\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\AutoBid_Final\Autobid\Core\bin\Debug\Core.dll
+D:\AutoBid_Final\Autobid\Core\bin\Debug\Core.pdb
+D:\AutoBid_Final\Autobid\Core\bin\Debug\Autofac.dll
+D:\AutoBid_Final\Autobid\Core\bin\Debug\Autofac.Integration.Mvc.dll
+D:\AutoBid_Final\Autobid\Core\bin\Debug\EntityFramework.dll
+D:\AutoBid_Final\Autobid\Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\AutoBid_Final\Autobid\Core\bin\Debug\Newtonsoft.Json.dll
+D:\AutoBid_Final\Autobid\Core\bin\Debug\Autofac.xml
+D:\AutoBid_Final\Autobid\Core\bin\Debug\Autofac.Integration.Mvc.xml
+D:\AutoBid_Final\Autobid\Core\bin\Debug\EntityFramework.xml
+D:\AutoBid_Final\Autobid\Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\AutoBid_Final\Autobid\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\AutoBid_Final\Autobid\Core\obj\Debug\Core.dll
+D:\AutoBid_Final\Autobid\Core\obj\Debug\Core.pdb
+D:\Amrita\AutoBid-14_07_2015\Autobid\Autobid\Core\bin\Debug\Core.dll
+D:\Amrita\AutoBid-14_07_2015\Autobid\Autobid\Core\bin\Debug\Core.pdb
+D:\Amrita\AutoBid-14_07_2015\Autobid\Autobid\Core\bin\Debug\Autofac.dll
+D:\Amrita\AutoBid-14_07_2015\Autobid\Autobid\Core\bin\Debug\Autofac.Integration.Mvc.dll
+D:\Amrita\AutoBid-14_07_2015\Autobid\Autobid\Core\bin\Debug\EntityFramework.dll
+D:\Amrita\AutoBid-14_07_2015\Autobid\Autobid\Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\Amrita\AutoBid-14_07_2015\Autobid\Autobid\Core\bin\Debug\Newtonsoft.Json.dll
+D:\Amrita\AutoBid-14_07_2015\Autobid\Autobid\Core\bin\Debug\System.Web.Mvc.dll
+D:\Amrita\AutoBid-14_07_2015\Autobid\Autobid\Core\bin\Debug\Autofac.xml
+D:\Amrita\AutoBid-14_07_2015\Autobid\Autobid\Core\bin\Debug\Autofac.Integration.Mvc.xml
+D:\Amrita\AutoBid-14_07_2015\Autobid\Autobid\Core\bin\Debug\EntityFramework.xml
+D:\Amrita\AutoBid-14_07_2015\Autobid\Autobid\Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\Amrita\AutoBid-14_07_2015\Autobid\Autobid\Core\bin\Debug\System.Web.Mvc.xml
+D:\Amrita\AutoBid-14_07_2015\Autobid\Autobid\Core\obj\Debug\Core.dll
+D:\Amrita\AutoBid-14_07_2015\Autobid\Autobid\Core\obj\Debug\Core.pdb
+D:\Amrita\AutoBid-14_07_2015\Autobid\Autobid\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+F:\Office Projects\Lessons\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+F:\Office Projects\Lessons\Core\obj\Debug\Core.dll
+F:\Office Projects\Lessons\Core\bin\Debug\Core.dll
+F:\Office Projects\Lessons\Core\bin\Debug\Core.pdb
+F:\Office Projects\Lessons\Core\bin\Debug\Newtonsoft.Json.dll
+F:\Office Projects\Lessons\Core\bin\Debug\System.Web.Mvc.dll
+F:\Office Projects\Lessons\Core\bin\Debug\Autofac.xml
+F:\Office Projects\Lessons\Core\bin\Debug\Autofac.Integration.Mvc.xml
+F:\Office Projects\Lessons\Core\bin\Debug\EntityFramework.xml
+F:\Office Projects\Lessons\Core\bin\Debug\EntityFramework.SqlServer.xml
+F:\Office Projects\Lessons\Core\bin\Debug\System.Web.Mvc.xml
+F:\Office Projects\Lessons\Core\obj\Debug\Core.pdb
+D:\Projects\Lessons\SourceCode\Lessons\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\Projects\Lessons\SourceCode\Lessons\Core\bin\Debug\Core.dll
+D:\Projects\Lessons\SourceCode\Lessons\Core\bin\Debug\Core.pdb
+D:\Projects\Lessons\SourceCode\Lessons\Core\bin\Debug\Autofac.dll
+D:\Projects\Lessons\SourceCode\Lessons\Core\bin\Debug\Autofac.Integration.Mvc.dll
+D:\Projects\Lessons\SourceCode\Lessons\Core\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\Lessons\SourceCode\Lessons\Core\bin\Debug\System.Web.Mvc.dll
+D:\Projects\Lessons\SourceCode\Lessons\Core\bin\Debug\System.Web.Mvc.xml
+D:\Projects\Lessons\SourceCode\Lessons\Core\obj\Debug\Core.dll
+D:\Projects\Lessons\SourceCode\Lessons\Core\obj\Debug\Core.pdb
+D:\Projects\CakeApp\Core\bin\Debug\Core.dll
+D:\Projects\CakeApp\Core\bin\Debug\Core.pdb
+D:\Projects\CakeApp\Core\bin\Debug\EntityFramework.dll
+D:\Projects\CakeApp\Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\CakeApp\Core\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\CakeApp\Core\bin\Debug\System.Web.Mvc.dll
+D:\Projects\CakeApp\Core\bin\Debug\EntityFramework.xml
+D:\Projects\CakeApp\Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\CakeApp\Core\bin\Debug\System.Web.Mvc.xml
+D:\Projects\CakeApp\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\Projects\CakeApp\Core\obj\Debug\Core.dll
+D:\Projects\CakeApp\Core\obj\Debug\Core.pdb
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Core\bin\Debug\Core.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Core\bin\Debug\Core.pdb
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Core\bin\Debug\EntityFramework.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Core\bin\Debug\EntityFramework.SqlServer.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Core\bin\Debug\Newtonsoft.Json.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Core\bin\Debug\System.Web.Mvc.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Core\bin\Debug\EntityFramework.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Core\bin\Debug\EntityFramework.SqlServer.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Core\bin\Debug\System.Web.Mvc.xml
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Core\obj\Debug\Core.dll
+F:\Office Projects\cakeapp\CakeApp\CakeApp\Core\obj\Debug\Core.pdb
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\Core\bin\Debug\Core.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\Core\bin\Debug\Core.pdb
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\Core\bin\Debug\EntityFramework.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\Core\bin\Debug\Newtonsoft.Json.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\Core\bin\Debug\EntityFramework.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\Core\obj\Debug\Core.dll
+D:\TFS\cakeapp\cakeapp\CakeApp\CakeApp\Core\obj\Debug\Core.pdb
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Core\bin\Debug\Core.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Core\bin\Debug\Core.pdb
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Core\bin\Debug\EntityFramework.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Core\bin\Debug\Newtonsoft.Json.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Core\bin\Debug\EntityFramework.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Core\obj\Debug\Core.dll
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Core\obj\Debug\Core.pdb
+D:\Amrita\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Core\bin\Debug\Core.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Core\bin\Debug\Core.pdb
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Core\bin\Debug\EntityFramework.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Core\bin\Debug\Newtonsoft.Json.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Core\bin\Debug\EntityFramework.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Core\obj\Debug\Core.dll
+D:\cakapp\cakeapp -17_09_2015\cakeapp\cakeapp\cakeapp\CakeApp\CakeApp\Core\obj\Debug\Core.pdb
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\Core\bin\Debug\Core.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\Core\bin\Debug\Core.pdb
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\Core\bin\Debug\EntityFramework.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\Core\bin\Debug\Newtonsoft.Json.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\Core\bin\Debug\EntityFramework.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\Core\obj\Debug\Core.dll
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\Core\obj\Debug\Core.pdb
+D:\Amrita\cakeapp-21_09_2015\cakeapp\CakeApp\CakeApp\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache

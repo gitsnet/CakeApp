@@ -1,0 +1,619 @@
+﻿@model CakeApp.Areas.Admin.Models.Product.ProductModel
+@using CakeApp.Helper
+
+@{
+    ViewBag.Title = "EditProduct";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    ViewBag.href = "/admin/Products/ProductList";
+    ViewBag.Description = "Product";
+    ViewBag.SubDescription = "Edit Product";
+
+}
+
+<section class="mainbody">
+    <div class="container edit_product">
+        <h2>Edit Product</h2>
+        <div class="row">
+            <div class="col-md-12">
+                @Html.CustomValidationSummary("Error")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                @using (Html.BeginForm("EditProduct", "Products", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form", novalidate = "novalidate", @class = "form-horizontal", @enctype = "multipart/form-data", @id = "editForm" }))
+                {
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Name</label>
+                        <div class="col-sm-5">
+
+                            @Html.TextBoxFor(c => c.ProductName, new { @class = "form-control", @placeholder = "Name" })
+                            @Html.ValidationMessageFor(m => m.ProductName)
+                            @Html.HiddenFor(j => j.ProductID, new { @id="hdnProductID"})
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Title</label>
+                        <div class="col-sm-5">
+
+                            @Html.TextBoxFor(c => c.Title, new { @class = "form-control", @placeholder = "Title" })
+                            @Html.ValidationMessageFor(m => m.Title)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Image</label>
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-8">
+                                @*@if (Model.ProductImageList.Count > 0)
+                                {
+                                    foreach (var img in Model.ProductImageList)
+                                    {
+                                        <img src='@(Url.Content("~/Content/Assets/ProductImages/")+img.ImageName)' alt="@img.ImageName" class="thumbnail" style="width:25%;" />
+                                    }
+                                }*@
+                                @if (Model.ImageName != null)
+                                {
+                                    <img src='@(Url.Content("~/Content/Assets/ProductImages/")+Model.ImageName)' alt="@Model.ImageName" class="thumbnail" style="width:25%;" />
+
+                                }
+                                else
+                                {
+                                     <img src='@(Url.Content("~/Content/Assets/ProductImages/noimage.png"))' alt="@Model.ImageName" class="thumbnail" style="width:25%;" />
+                                    
+                                }
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2 control-label">Image Upload</div>
+                            <div class="col-sm-4" id="divImgUpload">
+                                <input id="file-0a" class="file" type="file" name="file">
+                                @*<input type="hidden" id="hdnImg" value="">*@
+                                @Html.HiddenFor(m => m.ImageName, new { @id = "hdnimageName" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Tag</label>
+                        <div class="col-sm-5">
+
+                            @Html.DropDownList("TagID", new SelectList(Model.TagList, "TagID", "TagName"), "--Select--", new { @class = "form-control", @id = "ddlTags" })
+                            @Html.ValidationMessageFor(m => m.TagID)
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Categories</label>
+                        @Html.HiddenFor(a => a.CategoryIDs, new { @id = "hdnCategoryIDs" })
+                        @Html.HiddenFor(a => a.InfoIDs, new { @id = "hdnInfoIDs" })
+                        @Html.HiddenFor(a => a.SizeIDs, new { @id = "hdnSizeIDs" })
+
+
+                        <div class="col-sm-5">
+                            <div class="row " id="more_cat_category">
+                                @*@{var i = 0;
+                                    foreach (var item in Model.ProductCategoriesList)
+                                    {
+
+                                        i++;
+                                        <div class="row clone_row">
+                                            <div class="col-sm-5">
+                                                @Html.DropDownListFor(t => t.CategoryID, new SelectList(Model.CategoryList, "CategoryID", "CategoryName", item.CategoryID), "--Select--", new { @class = "form-control categorylist", @id = "ddlCategories_" + i, @onchange = "InsertCategoryId(this)" })
+                                                @Html.ValidationMessageFor(m => m.CategoryID)
+
+                                            </div>
+
+
+
+                                            <div class="col-sm-3">
+                                                <button style="" class="btn btn-danger delete_more_category" type="button" onclick="DeleteRowCategory(this)"><i class="fa fa-minus-circle"></i></button>
+
+                                                <button class="btn btn-warning add_more_category" type="button" onclick="AddRowCategory(this)"><i class="fa fa-plus-circle"></i></button>
+                                            </div>
+                                        </div>
+                                    }
+                                    }*@
+
+                                @{var z = 0;
+                                foreach (var item1 in Model.CategoryList)
+                                {
+                                    z++;
+                                    var checkedvalue = "";
+                                    foreach (var item in Model.ProductCategoriesList)
+                                    {
+
+
+                                        if (item1.CategoryID == item.CategoryID)
+                                        {
+
+                                            checkedvalue = "checked";
+                                        }
+
+
+
+                                    }
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="@item1.CategoryID" class="categorylist" @checkedvalue>   @item1.CategoryName
+                                        </label>
+                                    </div>
+
+                                }
+                                }
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label ">Priority</label>
+                        <div class="col-sm-1">
+                            @Html.TextBoxFor(c => c.Priority, new { @class = "form-control input-sm number", @placeholder = "Priority", @type = "number", @step = "10" })
+                            @Html.ValidationMessageFor(m => m.Priority)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Group</label>
+                        <div class="col-sm-5">
+
+                            @Html.DropDownList("GroupID", new SelectList(Model.GroupList, "GroupID", "GroupName"), "--Select--", new { @class = "form-control", @id = "ddlGroups" })
+                            @Html.ValidationMessageFor(m => m.GroupID)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Info:</label>
+                        <div class="col-sm-10" id="divInfo">
+                            @{var k = 0;
+                            foreach (var item1 in Model.InfoList)
+                            {
+                                k++;
+                                var checkedvalue = "";
+                                foreach (var item in Model.ProductInfoList)
+                                {
+
+
+                                    if (item1.InfoID == item.InfoID)
+                                    {
+
+                                        checkedvalue = "checked";
+                                    }
+
+
+
+                                }
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="@item1.InfoID" class="infoList" @checkedvalue>   @item1.InfoName
+                                    </label>
+                                </div>
+
+                            }
+                            }
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Sizes</label>
+                        <div class="col-sm-6" id="divSize">
+
+                            @*@{var n = 0;
+
+                            foreach (var item1 in Model.SizeList)
+                            {
+                                n++;
+                                var checkedvalue = "";
+                                var size = 0;
+                                foreach (var item in Model.ProductSizesList)
+                                {
+
+
+                                    if (item1.SizeID == item.SizeID)
+                                    {
+
+                                        checkedvalue = "checked";
+                                        size = Convert.ToInt32(item.SizeID);
+                                    }
+
+
+
+                                }
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="@item1.SizeID" class="size" @checkedvalue>   @item1.Size
+                                    </label>
+
+                                    @if (Model.ProductPriceList.Count > 0 || Model.ProductPriceList != null)
+                                    {
+                                        foreach (var item2 in Model.ProductPriceList)
+                                        {
+                                            var sizeprice = item2.SizeID;
+                                            if (checkedvalue == "checked" && size == sizeprice)
+                                            {
+                                                <input type="text" class="price col-md-offset-2" placeholder="" value="@item2.Price" />
+                                            }
+                                           
+
+                                        }
+
+                                    }
+
+                                </div>
+                            }
+                            }*@
+
+                            @{var n = 0;
+                            foreach (var item1 in Model.SizeList)
+                            {
+                                n++;
+                                var checkedvalue = "";
+                                decimal price = 0;
+                                foreach (var item in Model.ProductPriceList)
+                                {
+
+
+                                    if (item1.SizeID == item.SizeID)
+                                    {
+
+                                        checkedvalue = "checked";
+                                        price = Convert.ToDecimal(item.Price);
+                                    }
+
+
+
+                                }
+                                if (@checkedvalue == "checked")
+                                { 
+                                <div class="checkbox">
+                                    <label style="width:100px">
+                                        <input type="checkbox" value="@item1.SizeID" class="size" @checkedvalue>   @item1.Size
+                                    </label>
+                                    <input type="text"  class="price col-md-offset-2" placeholder="" value="@price" />
+                                </div>
+                                }
+                                else
+                                {
+                                  <div class="checkbox">
+                                      <label style="width:100px">
+                                          <input type="checkbox" value="@item1.SizeID" class="size" @checkedvalue>   @item1.Size
+                                      </label>
+                                      <input type="text"  class="price col-md-offset-2" placeholder="" value="" />
+                                </div>   
+                                }
+
+                            }
+                            }
+
+
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Additional info</label>
+                        @*<div class="col-sm-5">
+
+                                @Html.TextAreaFor(c => c.AdditionalInfo, new { @class = "form-control", @placeholder = "Additional Information", @rows = "10", @cols = "40" })
+                                @Html.ValidationMessageFor(m => m.AdditionalInfo)
+                            </div>*@
+                        <div class="checkbox ">
+                            <label>
+                                @Html.CheckBoxFor(m => m.statusAdditionalInfo, new { @class = "statusAdditionalInfo" })
+
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Instructions</label>
+                        @*<div class="col-sm-5">
+
+                                @Html.TextAreaFor(c => c.Instructions, new { @class = "form-control", @placeholder = "Instructions", @rows = "10", @cols = "40" })
+                                @Html.ValidationMessageFor(m => m.Instructions)
+                            </div>*@
+                        <div class="checkbox">
+                            <label>
+                                @Html.CheckBoxFor(m => m.statusInstructions, new { @class = "statusInstructions" })
+                            </label>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Status</label>
+                        <div class="col-sm-5">
+                            <label class="checkbox-inline">
+                                @Html.RadioButtonFor(g => g.Status, "1", new { @name = "rad", @checked = "true" }) Enable
+
+
+                            </label>
+                            <label class="checkbox-inline">
+
+                                @Html.RadioButtonFor(g => g.Status, "0", new { @name = "rad" })Disable
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-actions col-md-offset-2 margin-bottom-15">
+                        <button type="button" class="btn btn-primary" onclick="SubmitForm()">Save changes</button>
+                        <button type="button" class="btn btn-danger" id="btnCancel" onclick="resetFields($('#editForm'));">Cancel</button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+
+    var groupids = "";
+
+    function InsertCategoryId(that) {
+        var flag = false;
+        if ($(".categorylist").length > 1) {
+            $(".categorylist").each(function () {
+                if ($(that).val() == $(this).val() && $(this).attr("id") != $(that).attr("id")) {
+                    flag = true;
+                    return false;
+                }
+            });
+        }
+        if (flag) {
+            alert($(that).children("option:selected").text() + " was already added.")
+            $(that).val("");
+        }
+
+    }
+
+    function AddRowCategory(that) {
+        var row = $(".clone_row:last-child");
+        var thisRow = $(".clone_row:last-child").clone().appendTo('#more_cat_category');
+        var lastDDlId = $(row).find("select").attr("id").split('_')[1];
+        $(thisRow).find("select").attr("id", "ddlcategories_" + parseInt(parseInt(lastDDlId) + 1));
+
+    }
+
+
+    function DeleteRowCategory(that) {
+        if ($(".categorylist").length > 1)
+            $(that).parent().parent().remove();
+    }
+
+    //$('#file-0a').on("change", function () {
+
+    //    var filename = $('#file-0a').val();
+    //    console.log(filename);
+    //    $('#hdnimageName').val(filename);
+    //    console.log($('#hdnimageName').val());
+
+
+    //})
+
+    $("#file-0a").on("change", function () {
+        var image = $("#hdnimageName").val();
+        var filename = $("#file-0a").val();
+        $("#hdnimageName").val(filename);
+        console.log($("#hdnimageName").val());
+    });
+
+
+    var SubmitForm = function () {
+        var value = "";
+        var infovalue = "";
+        var sizevalue = "";
+        var statadditionalinfovalue = "";
+        var statinstructionsvalue = "";
+
+        //$("#hdnCategoryIDs").val("");
+        //$(".categorylist").each(function () {
+        //    if ($(this).val())
+        //        value += $(this).val() + ",";
+        //});
+        //$("#hdnCategoryIDs").val(value);
+
+        $("#hdnCategoryIDs").val("");
+        $(".categorylist").each(function () {
+            if ($(this).is(":checked"))
+                value += $(this).val() + ",";
+        });
+        $("#hdnCategoryIDs").val(value);
+
+
+
+
+        $("#hdnInfoIDs").val("");
+        $(".infoList").each(function () {
+            if ($(this).is(":checked"))
+                infovalue += $(this).val() + ",";
+        });
+        $("#hdnInfoIDs").val(infovalue);
+
+
+        $("#hdnSizeIDs").val("");
+        $(".size").each(function () {
+            if ($(this).is(":checked")) {
+                var price = $(this).parent().parent().find(".price").val();
+                console.log(price);
+                sizevalue += $(this).val() + "|" + price + ",";
+            }
+        });
+        $("#hdnSizeIDs").val(sizevalue);
+
+
+
+
+
+
+        $("#hdnstatAdditionalInfo").val("");
+        if ($(".statusAdditionalInfo").is(":checked")) {
+
+            statadditionalinfovalue = "1";
+            console.log(statadditionalinfovalue);
+
+        }
+
+        $("#hdnstatInstructions").val("");
+        if ($(".statusInstructions").is(":checked")) {
+
+            statinstructionsvalue = "1";
+            console.log(statinstructionsvalue);
+
+        }
+
+        $("#editForm").submit();
+    }
+
+    $('#ddlGroups').change(function () {
+        if ($("#ddlGroups").val() != "") {
+            var GroupID = $("#ddlGroups").val();
+
+            var htmlinfo = "";
+            var htmlsize = "";
+            $.ajax({
+                type: "GET",
+                datatype: 'json',
+                data: { id: GroupID },
+                url: '@Url.Action("GetInfosAndSizes", "Products")',
+                success: function (result) {
+                    $('.price').remove();
+                    $.each(result.InfoList, function (index, value) {
+                        htmlinfo += '<div class="checkbox"><label><input type="checkbox" value="' + value.InfoID + '" class="infoList"> ' + value.InfoName + '</label></div>';
+                    });
+                    $('#divInfo').html(htmlinfo);
+                    $('#divInfo').show();
+
+
+                    $.each(result.SizeList, function (index, value) {
+                        htmlsize += '<div class="checkbox"><label style="width:100px"><input type="checkbox" value="' + value.SizeID + '"  class="size"> ' + value.Size + '</label>';
+                        htmlsize += '<input type="text" class="price col-md-offset-2" id="size_price" placeholder="Price" value=""></div>';
+
+                    });
+
+                    $('#divSize').html(htmlsize);
+                    $('#divSize').show();
+
+                    //$('#divPrice > div').map(function () {
+                    //    console.log(this.id);
+                    //});
+
+
+                },
+                error: function (err) {
+                    $(document).trigger("add-alerts", {
+                        message: err,
+                        priority: "error"
+                    });
+                }
+
+            });
+
+
+        }
+        else {
+
+            $('#divInfo').html("");
+            $('#divSize').html("");
+
+        }
+
+    });
+
+
+    function ShowtxtPrice(that) {
+        var htmlprice = "";
+        console.log("...............")
+
+        if ($(that).prop('checked')) {
+            htmlprice += '<input type="text" class="price col-md-offset-2" id="size_price" placeholder="Price" value="">';
+
+            $(that).parent().parent().append(htmlprice);
+
+
+        }
+        else {
+
+            $('.price').remove();
+            //$('#divPrice').hide();
+        }
+
+    }
+
+    function resetFields(form) {
+        $(':input', form).each(function () {
+            var type = this.type;
+            var tag = this.tagName.toLowerCase();
+            if (type == 'text' || type == 'password' || tag == 'textarea' || type == 'file')
+                this.value = "";
+
+            else if (type == 'checkbox' || type == 'radio')
+                this.checked = false;
+            else if (tag == 'select')
+                this.selectedIndex = 0;
+        });
+
+
+        var ProductID = $("#hdnProductID").val();
+
+        $.ajax({
+            type: "GET",
+            datatype: 'json',
+            data: { id: ProductID },
+            url: '@Url.Action("EditProduct", "Products")',
+            success: function (result) {
+                console.log(result)
+
+            },
+            error: function (err) {
+                $(document).trigger("add-alerts", {
+                    message: err,
+                    priority: "error"
+                });
+            }
+
+        });
+
+    }
+
+
+    $('#btnCancel').click(function () {
+
+        $('#editForm').trigger("reset")
+
+        var ProductID = $("#hdnProductID").val();
+        //var nRow = $(this).parents('tr')[0];
+        $.ajax({
+            type: "GET",
+            datatype: 'json',
+            data: { id: ProductID },
+            url: '@Url.Action("EditProduct", "Products")',
+            success: function (result) {
+                console.log(result)
+
+            },
+            error: function (err) {
+                $(document).trigger("add-alerts", {
+                    message: err,
+                    priority: "error"
+                });
+            }
+
+        });
+
+    });
+
+
+
+
+</script>
